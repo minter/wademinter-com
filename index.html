@@ -1,0 +1,51 @@
+---
+layout: default
+title: Carolina Hurricanes Public Address Announcer and Tech Executive.
+description: Wade Minter is a technology executive, NHL Public Address Announcer, Improv Comedian, and Public Speaker in Raleigh, North Carolina.
+featured_image: /images/site/wade-rtp180.jpg
+---
+
+<section class="hero">
+
+	<div class="hero__image" style="background-image: url({{ page.featured_image | relative_url }})">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>Technology Executive, NHL PA Announcer, Engineering Leader, Improv Comedian, Public Speaker</h1>
+		<p>I lead a very weird life.</p>
+
+		{% include socials.html %}
+
+	</div>
+
+</section>
+
+<section class="listing">
+
+	<div class="wrap">
+
+		{% for project in site.projects %}
+
+		<article class="post">
+
+			<div class="post__image-wrap">
+				<div class="post__image" style="background-image: url({{ project.featured_image | relative_url }})"></div>
+			</div>
+
+			<div class="post__content-wrap">
+				<div class="post__content">
+					<h2 class="post__title"><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h2>
+					<p class="post__subtitle">{{ project.subtitle }}</p>
+					<p class="post__description">{{ project.description }}</p>
+				</div>
+			</div>
+
+		</article>
+
+		{% endfor %}
+
+	</div>
+
+</section>
