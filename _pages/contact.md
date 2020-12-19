@@ -2,7 +2,7 @@
 title: Contact Me
 subtitle: Nobody uses the phone any more. But drop me an email here and I'll get back to you.
 description: Email Wade to get in touch.
-featured_image: /images/demo/contact.jpg
+featured_image: /images/site/contact.jpg
 ---
 
 {% include contact-form.html %}

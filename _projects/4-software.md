@@ -32,6 +32,28 @@ A rewritten version of [​Mr. Voice](https://github.com/minter/mrvoice), the so
 * Bootstrap
 
 ---
+
+<img src="/images/site/software/sox-logo.png" style="float: right; margin: 1em;">
+
+## [Suggestion Ox](https://suggestionox.com/)
+### Flexible, anonymous online sugestion box
+
+**Site**: [suggestionox.com](https://suggestionox.com/)
+
+A collaboration with my longtime friend Andrew Berkowitz, Suggestion Ox provides an easy way to get anonymous feedback. Trusted By Over 50,000 Companies, Associations & Government Agencies, including Samsung, Hilton, and the US Air Force.
+
+Top organizations use Suggestion Ox for employee feedback, customer insights, reporting & whistleblowing requirements.
+
+**Technologies**:
+* Ruby on Rails 6
+* Sidekiq
+* Heroku
+* Postgres
+* Capistrano
+* Redis
+
+---
+
 <img src="/images/site/software/rosterflash-icon.png" style="float: right; margin: 1em;">
 
 ## [RosterFlash](https://rosterflash.com/)
