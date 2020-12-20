@@ -4,6 +4,7 @@ subtitle: 'Recording personalized announcements for you!'
 date: 2020-12-18 22:00:00
 description: To raise money for the Carolina Hurricanes Foundation, I have partnered with Cameo to record personalized goal calls and other announcements.
 featured_image: '/images/site/mic-stand-script.jpg'
+permalink: '/charity'
 ---
 
 ![](/images/site/wade-in-box.jpg)

@@ -4,6 +4,7 @@ subtitle: 'As a conference speaker and emcee, I am guaranteed to entertain'
 date: 2020-12-18 22:00:00
 description: From tech conferences to panel discussions to keeping your show moving, I can speak on a wide range of topics or be the host with the most.
 featured_image: '/images/site/innovate-raleigh-2018.jpg'
+permalink: '/speaking'
 ---
 
 ![](/images/site/ato-audience.jpg)

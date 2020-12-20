@@ -4,6 +4,7 @@ subtitle: 'My career as a product-focused engineering leader'
 date: 2020-12-18 22:00:00
 description: I have built and led engineering teams at companies like TeamSnap, Adwerx, WeaveUp, Custom Communications, and more. Find out more about my work history and skills.
 featured_image: '/images/site/wade-amanda.jpg'
+permalink: '/resume'
 ---
 
 ![](/images/site/oscon-2016.jpg)

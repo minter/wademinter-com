@@ -4,6 +4,7 @@ subtitle: 'Some of the software that I have developed'
 date: 2020-12-18 22:00:00
 description: I hack around on some personal projects as well, mostly in Ruby, Rails, and Javascript. Learn more about the software that I have written.
 featured_image: '/images/site/atom-screenshot.png'
+permalink: '/software'
 ---
 
 ## Software That I Have Written
