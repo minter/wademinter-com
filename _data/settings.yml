@@ -27,7 +27,7 @@ post_settings:
   grid_spacing: 10
 
 contact_settings:
-  form_action: 'https://formspree.io/f/mrgoozae'
+  form_action: 'https://smartforms.dev/submit/5fe8fa14b81854118fd3f8e6'
   confirmation_url: '/thanks'
   email_subject: 'Email from wademinter.com'
   send_button_text: 'Send Email'

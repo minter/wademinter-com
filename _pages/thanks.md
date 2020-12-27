@@ -1,10 +1,8 @@
 ---
-title: Thank you
+title: Thank You!
 subtitle: Your message was sent successfully.
-description: A sleek, modern Jekyll theme for personal websites.
+description: Your message to Wade has been sent.
 featured_image: /images/site/contact.jpg
 ---
 
-![](/images/demo/about.jpg)
-
-Please note, this contact form is for demo purposes only and is not monitored. Please contact us [via our website](https://jekyllthemes.io) if you need support.
+Thank you for contacting Wade. If you need to get in touch directly, feel free to also email `wade` AT `wademinter` DOT `com`.
