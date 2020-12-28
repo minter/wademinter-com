@@ -13,6 +13,8 @@ permalink: '/speaking'
 
 I enjoy getting out in front of people and talking about my passions: Great software, diverse development teams, supporting entry-level developers, and having a customer-focused mindset. I also emcee events - providing an entertaining and energetic experience for conference-goers.
 
+> I had the absolute pleasure of working with Wade during the Innovate Raleigh Summit. Wade has been an incredible supporter of our region’s entrepreneurial and innovation ecosystem and we are so grateful for his leadership. He is consistently kind, creative, generous, and not to mention hilarious -- a true joy to work with. I sincerely hope that we have the opportunity to work together again. --Bridget Harrington, Executive Director of Innovate Raleigh
+
 One of my most popular workshops is my applied improv training. In only a few hours, I can take a group of introverted strangers and teach them about collaboration, listening, ideation, empathy, and more!
 
 Here's a sampling of where I've spoken. I'd love to add your event to the list!
