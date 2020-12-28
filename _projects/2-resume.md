@@ -22,7 +22,13 @@ For a full list of roles, visit [my LinkedIn page](https://linkedin.com/in/minte
 ### Product Principal - [Dualboot Partners](https://dualbootpartners.com/)
 #### 2020 - Present
 
-Product lead and fractional CTO to Dualboot's clients, working with our designers, developers, and QA to deliver great software.
+<img src="/images/site/dbp-logo.png" style="float: right; margin: 1em;">
+
+Dualboot Partners works with management teams to deliver digital solutions from strategy through implementation. We are seasoned technology veterans with a long and proven track record of building new products, iterating on in-market products, and re-platforming legacy systems.
+
+Our capabilities include product innovation, strategy, design, front and backend development, fractional CTO, QA, and PMO. We are fluent in almost every modern technology stack.
+
+As Product Principal, I provide technical and product leadership, along with client management, to clients across the fields of Finance, Health, Fitness, Retail, Shipping, B2B SaaS, Internal Tools, and more.
 
 ---
 
@@ -30,7 +36,8 @@ Product lead and fractional CTO to Dualboot's clients, working with our designer
 #### 2017 - 2020
 
 <img src="/images/site/cci-logo.png" style="float: right; margin: 1em;">
- Reporting to the CEO, led a globally distributed team of developers, building applications to streamline & automate both the operations of field service technicians and relationships with multiple data providers. Instituted new processes to increase developer happiness and business value, dramatically increasing time to delivery, system performance, and reputation of engineering team to rest of the organization. Overhauled dev team through strategic hiring and performance management actions to improve internal collaboration and drive results.
+
+Reporting to the CEO, led a globally distributed team of developers, building applications to streamline & automate both the operations of field service technicians and relationships with multiple data providers. Instituted new processes to increase developer happiness and business value, dramatically increasing time to delivery, system performance, and reputation of engineering team to rest of the organization. Overhauled dev team through strategic hiring and performance management actions to improve internal collaboration and drive results.
 ​
 * **Project**: Working with business stakeholders & developers in the US and Ukraine, stabilized & improved , the company's custom-built internal logistics software, through automation and refactoring key areas to make them more flexible.  Results: Within 6 months, reduced average time for feature deployment from 8 weeks to 2-3 days, automated 80% of manual work order claims and reduced need for call center staff by 60%.Enabled job counts per day to grow by 3x, without an increase in operations and call center staff. Moved key provider metrics (on-time arrival, customer satisfaction, NPS) to number one compared with peer companies.
 * **Methodologies**: Kanban.
