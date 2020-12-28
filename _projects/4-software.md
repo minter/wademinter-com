@@ -2,14 +2,14 @@
 title: 'Code'
 subtitle: 'Some of the software that I have developed'
 date: 2020-12-18 22:00:00
-description: I hack around on some personal projects as well, mostly in Ruby, Rails, and Javascript. Learn more about the software that I have written.
+description: I hack around on some personal projects as well, mostly in Ruby, Rails, and Javascript. Learn more about the software that I write.
 featured_image: '/images/site/atom-screenshot.png'
 permalink: '/software'
 ---
 
 ## Software That I Have Written
 
-I have a few software projects that I work on, either by myself or with friends, because I love solving problems with software. If you'd like to take a look at some of what I've written, here's how to find it!
+I have a few software projects that I work on, either by myself or with friends, because I enjoy using technology to solve problems that I see in the world. If you'd like to take a look at some of what I've written, here's how to find it!
 
 <img src="/images/site/software/mx-voice-icon.png" style="float: right; margin: 1em;">
 

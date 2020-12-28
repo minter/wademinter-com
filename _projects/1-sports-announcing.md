@@ -20,6 +20,11 @@ My journey from the tobacco fields of Lunenburg County, Virginia, to the NHL mic
 
 > "hey, I attended my first Canes game last Friday (from the UK) and whilst this may sound weird, just wanted to commend you on your outstanding announcing throughout, really enhanced the experience. This was my 22nd NHL arena and you’re the best! Top job!" --[Chris Roderick](https://twitter.com/croderick1982/status/1103789471579938816?s=20)
 
+> "This is breathtaking. Everyone in PNC Arena screaming along with
+@minter calling the goal and assists." --[Sara Civian](https://twitter.com/SaraCivian/status/1113976493632315393)
+
+{% twitter https://twitter.com/corylav/status/1117928558721208320 %}
+
 ### Scoring Goals, Making SportsCenter
 
 On February 14, 2016, I entered the record books as the first person to announce their own first NHL goal.
