@@ -62,7 +62,7 @@ Top organizations use Suggestion Ox for employee feedback, customer insights, re
 
 **Site**: [rosterflash.com](https://rosterflash.com/)
 
-A companion app to TeamSnap, RosterFlash sends you an alert if a member of your team changes their availability close to game time. That way, you know immediately if you need to change your lineup plans. Uses TeamSnap's OAuth login for authentication.
+A companion app to [TeamSnap](https://teamsnap.com/), RosterFlash sends you an alert if a member of your team changes their availability close to game time. That way, you know immediately if you need to change your lineup plans. Uses TeamSnap's OAuth login for authentication.
 
 **Technologies**:
 * Ruby on Rails 6
@@ -81,7 +81,7 @@ A companion app to TeamSnap, RosterFlash sends you an alert if a member of your 
 
 **Code**: [github.com/minter/tesla_puck](https://github.com/minter/tesla_puck)
 
-A fun personal project that mashes up the NHL StatsWeb API and the Tesla vehicle API. If my car is parked at PNC Arena for a Carolina Hurricanes game, TeslaPuck monitors the NHL API to see if the game has gone final. If so, it uses the Tesla API to turn on climate control in my car and set the navigation for home. If the Canes win, it honks the horn and flashes the lights in celebration! Configurable for other teams/cars/arenas.
+A fun personal project that mashes up the NHL StatsWeb API and the Tesla vehicle API. If my car is parked at PNC Arena for a [Carolina Hurricanes](https://www.nhl.com/hurricanes/) game, TeslaPuck monitors the NHL API to see if the game has gone final. If so, it uses the Tesla API to turn on climate control in my car and set the navigation for home. If the Canes win, it honks the horn and flashes the lights in celebration! Configurable for other teams/cars/arenas.
 
 Technologies:
 * Ruby
