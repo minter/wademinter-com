@@ -26,4 +26,4 @@ Here's some stuff about me that you might not know:
 * While in college, I performed in the shadow cast of *The Rocky Horror Picture Show*
 * I was not the inspiration for the Ben & Jerry's flavor "Minter Wonderland", but I should have been
 * My Github User ID is #955
-* I used to write reviews for WCW wrestling shows for [DDT Digest](http://ddtdigest.com)
+* I used to write reviews of WCW wrestling shows for [DDT Digest](http://ddtdigest.com)
