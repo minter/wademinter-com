@@ -83,12 +83,12 @@ Reporting to the CEO, built & managed Engineering (Development, DevOps, QA), mor
 
 ---
 
-### Founding Team, CTO - [TeamSnap](https://teamsnap.com/)
+### Founding Team, CTO - [TeamSnap](https://teamsnap.com/) (Acquired 2021)
 #### 2006 - 2014
 
 <img src="/images/site/teamsnap-logo.png" style="float: right; margin: 1em;">
 
-As part of the founding team, grew product from an interesting side project into a worldwide industry leader in the sports management space. Built Engineering from 4 part-time developers to a team of 15+ . Worked extensively with external technology partners and evaluating options for integration. Built API developer community, innovated compelling product features and originated the company’s voice on social media.
+As part of the founding team, grew product from an interesting side project into a worldwide industry leader in the sports management space. Built Engineering from 4 part-time developers to a team of 15+ . Worked extensively with external technology partners and evaluating options for integration. Built API developer community, innovated compelling product features and originated the company’s voice on social media. TeamSnap was [acquired in 2021 by Waud Capital](https://www.teamsnap.com/blog/announcements/teamsnap-partners-with-waud-capital-to-accelerate-expansion).
 ​
 > People love to work for Wade. They know that he will unfailingly go to bat for them -- as individuals and as a team -- and they respond to his management style with a great deal of loyalty and focus. He’s one of the best leaders I’ve ever met in terms of hiring. --Andrew Berkowitz
 
