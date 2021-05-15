@@ -37,38 +37,31 @@ Since March 2020, with the COVID pandemic, I have worked with The Frontier to in
 
 ## Speaking History
 
-### O'Reilly conferences
-
+* Building Weird Things With With The National Hockey League Using Ruby! - !!Con, 2021 
+* Emcee - Innovate Raleigh Candidates Forum, August 2019
+* Emcee - High Five, March 2019
+* You (Yes, You) Need to Support Junior Developers - Abstractions Conf, August 2019
+* Emcee, Innovate Raleigh Summit, November 2018
+* Startup Pitch Contest Emcee - All Things Open, October 2018
+* Building Compelling Software For Blue Collar Users - All Things Open, October 2018
 * Building Software For Blue-Collar Users - Fluent, June 2018
+* "Plays Well With Others": Improv For Nerds - RailsConf, April 2018
+* Improv For Marketers - High Five Conference, February 2017
+* Plays Well With Others - Applied Improv For Technologists - LISA, December 2016
 * [Building a pipeline: The case for hiring junior developers](https://www.youtube.com/watch?v=5TEpCd1m3HQ) - OSCON Europe (London), October 2016
 * [Building a pipeline: The case for hiring junior developers](https://www.youtube.com/watch?v=oL7H1aCJcxg) - OSCON, May 2016
 * Improve Your Team With Improv - OSCON Europe (Amsterdam), October 2015
 * "You code like a sysadmin" - Impostor Syndrome for the modern developer - OSCON, July 2015
-* Improv: Think, React, Go! - OSCON, July 2014
-Improve Your Team With Improv - OSCON, July 2013
-* Build A Better Team With Improv - OSCON, July 2012
-* Using OpenStack APIs: Present And Future - OSCON, July 2011
-* Customer Service For Nerds - OSCON, July 2011
-* Build a Better Team with Improv - OSCON, July 2011
-* Leveraging the Cloud for Web 2.0 Applications - Web 2.0 Expo, May 2010
-
-### USENIX
-
-* Plays Well With Others - Applied Improv For Technologists - LISA, December 2016
 * Improv For Sysadmins - LISA, November 2015
 * [You Code Like a Syadmin](https://www.youtube.com/watch?v=ZjdqP-REoqc) - LISA, November 2014
 * [Remote Work Panel](https://www.youtube.com/watch?v=vB92Znb6GS4) - LISA, November 2014
 * Improv: Think, React, Go! - LISA, November 2014
-* [Customer Service for Sysadmins](https://www.youtube.com/watch?v=OPSBNWLy9mA) - Large Installation System Administration (LISA), December 2011
-
-### Others
-* Emcee - RTP180 Talk Series, February 2018 - Present
-* Emcee - Innovate Raleigh Candidates Forum, August 2019
-* Emcee - High Five, March 2019
-* "You (Yes, You) Need to Support Junior Developers" - Abstractions Conf, August 2019
-* Emcee, Innovate Raleigh Summit, November 2018
-* Startup Pitch Contest Emcee - All Things Open, October 2018
-* Building Compelling Software For Blue Collar Users - All Things Open, October 2018
-* "Plays Well With Others": Improv For Nerds - RailsConf, April 2018
-* Improv For Marketers - High Five Conference, February 2017
+* Improv: Think, React, Go! - OSCON, July 2014
+* Improve Your Team With Improv - OSCON, July 2013
 * [Wide Teams Podcast](http://www.wideteams.com/2012/09/12/episode-49-wade-minter-and-andrew-berkowitz-of-teamsnap/) - September 2012
+* Build A Better Team With Improv - OSCON, July 2012
+* [Customer Service for Sysadmins](https://www.youtube.com/watch?v=OPSBNWLy9mA) - Large Installation System Administration (LISA), December 2011
+* Using OpenStack APIs: Present And Future - OSCON, July 2011
+* Customer Service For Nerds - OSCON, July 2011
+* Build a Better Team with Improv - OSCON, July 2011
+* Leveraging the Cloud for Web 2.0 Applications - Web 2.0 Expo, May 2010
