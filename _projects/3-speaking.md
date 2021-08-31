@@ -31,13 +31,13 @@ At RTP180, I keep the show fun and engaging, make the speakers look great, and f
 
 {% twitter https://twitter.com/laserllama/status/1174872841487114240?s=20 %}
 
-Since March 2020, with the COVID pandemic, I have worked with The Frontier to innovate an online version of RTP180, acting as a virtual host for the panel, and adapting to the needs of a Zoom-based format to keep the show engaging and educational.
+Between March 2020 - July 2021, with the COVID pandemic, I worked with The Frontier to innovate an online version of RTP180, acting as a virtual host for the panel, and adapting to the needs of a Zoom-based format to keep the show engaging and educational.
 
 ---
 
 ## Speaking History
 
-* [Building Weird Things With With The National Hockey League Using Ruby!](https://www.youtube.com/watch?v=5FoxERw7F2Y) - !!Con, 2021 
+* [Building Weird Things With With The National Hockey League Using Ruby!](https://www.youtube.com/watch?v=5FoxERw7F2Y) - !!Con, 2021
 * Emcee - Innovate Raleigh Candidates Forum, August 2019
 * Emcee - High Five, March 2019
 * You (Yes, You) Need to Support Junior Developers - Abstractions Conf, August 2019
