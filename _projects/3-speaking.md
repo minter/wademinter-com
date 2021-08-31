@@ -37,7 +37,7 @@ Since March 2020, with the COVID pandemic, I have worked with The Frontier to in
 
 ## Speaking History
 
-* Building Weird Things With With The National Hockey League Using Ruby! - !!Con, 2021 
+* [Building Weird Things With With The National Hockey League Using Ruby!](https://www.youtube.com/watch?v=5FoxERw7F2Y) - !!Con, 2021 
 * Emcee - Innovate Raleigh Candidates Forum, August 2019
 * Emcee - High Five, March 2019
 * You (Yes, You) Need to Support Junior Developers - Abstractions Conf, August 2019
