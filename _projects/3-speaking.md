@@ -37,8 +37,8 @@ Between March 2020 - July 2021, with the COVID pandemic, I worked with The Front
 
 ## Speaking History
 
-* [You (Yes, You) Need to Support Junior Developers](https://youtu.be/Rba-ypJwx2A?t=12522) - Space Apps NYC Symposium 2021
-* [Building Weird Things With With The National Hockey League Using Ruby!](https://www.youtube.com/watch?v=5FoxERw7F2Y) - !!Con, 2021
+* [You (Yes, You) Need to Support Junior Developers](https://youtu.be/Rba-ypJwx2A?t=12522) - Space Apps NYC Symposium October 2021
+* [Building Weird Things With With The National Hockey League Using Ruby!](https://www.youtube.com/watch?v=5FoxERw7F2Y) - !!Con, May 2021
 * Emcee - Innovate Raleigh Candidates Forum, August 2019
 * Emcee - High Five, March 2019
 * You (Yes, You) Need to Support Junior Developers - Abstractions Conf, August 2019
