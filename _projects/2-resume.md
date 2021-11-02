@@ -11,7 +11,7 @@ permalink: '/resume'
 
 ## My Career
 
-I am an accomplished, product-focused technology leader with 15+ years of experience building and managing high-performing, collaborative engineering teams in rapidly growing tech organizations. I've demonstrated success in diverse environments, from early stage startups to large corporations, with deep expertise in software development, devops and infrastructure management, along with an extensive subject matter background in sports technology, EdTech, and other mission-focused tech sectors. I have developed an excellent reputation as a mentor and developer of talent, cross-functional collaborator, and articulate technical leader who not only understands what makes customers happy, but knows how to successfully deliver.
+I am an accomplished, product-focused technology leader with 25+ years of experience building and managing high-performing, collaborative engineering teams in rapidly growing tech organizations. I've demonstrated success in diverse environments, from early stage startups to large corporations, with deep expertise in software development, devops and infrastructure management, along with an extensive subject matter background in sports technology, EdTech, and other mission-focused tech sectors. I have developed an excellent reputation as a mentor and developer of talent, cross-functional collaborator, and articulate technical leader who not only understands what makes customers happy, but knows how to successfully deliver.
 
 Additionally, I am likely the only technology executive you know who is also a National Hockey League Public Address Announcer, improv comedian, pro wrestling ring announcer, and ice hockey player/goalie.
 
@@ -29,6 +29,19 @@ Dualboot Partners works with management teams to deliver digital solutions from 
 Our capabilities include product innovation, strategy, design, front and backend development, fractional CTO, QA, and PMO. We are fluent in almost every modern technology stack.
 
 As Product Principal, I provide technical and product leadership, along with client management, to clients across the fields of Finance, Health, Fitness, Retail, Shipping, B2B SaaS, Internal Tools, and more.
+
+---
+
+### Founder and CTO - [Suggestion Ox](https://suggestionox.com/)
+#### 2015 - Present
+
+<img src="/images/site/software/sox-logo.png" style="float: right; margin: 1em;">
+
+We're the online suggestion box that makes it easy to find out what you're not hearing before small problems become big problems. 100% private, secure, and anonymous.
+
+Suggestion Ox provides an easy way to get anonymous feedback. Trusted By Over 50,000 Companies, Associations & Government Agencies, including Samsung, Hilton, and the US Air Force.
+
+Top organizations use Suggestion Ox for employee feedback, customer insights, reporting & whistleblowing requirements.
 
 ---
 
