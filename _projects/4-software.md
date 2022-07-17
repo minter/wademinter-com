@@ -67,22 +67,3 @@ Technologies:
 * Sidekiq
 * NHL StatsWeb API
 * Tesla API
-
----
-
-<img src="/images/site/software/csz-logo.png" style="float: right; margin: 1em;">
-
-## [Tourney](https://cszplayers.com/)
-### Improv festival registration and management
-
-**Site**: [cszplayers.com](https://cszplayers.com/)
-
-I write and manage the registration website for the annual ComedySportz World Championship festival. The registration site handles player registration, fee payment, workshop scheduling, festival communication, and more.
-
-**Technologies**:
-* Ruby on Rails 6
-* Sidekiq
-* Twilio API
-* Stripe
-* Postgres
-* Redis
