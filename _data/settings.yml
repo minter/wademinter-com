@@ -34,7 +34,7 @@ contact_settings:
 
 social_settings:
   facebook_url: ''
-  twitter_url: 'https://twitter.com/minter'
+  twitter_url: ''
   mastodon_url: 'https://ruby.social/@minter'
   instagram_url: ''
   snapchat_url: ''
