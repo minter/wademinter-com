@@ -25,9 +25,9 @@ Here's a sampling of where I've spoken. I'd love to add your event to the list!
 
 ![](/images/site/rtp-180-back.jpg)
 
-Since February 2018, I have been the host of [RTP180](https://frontier.rtp.org/rtp-180/), a monthly talk series at The Frontier in Research Triangle Park, presented by RTI International.
+From 2018-2023, I was the host of [RTP180](https://frontier.rtp.org/rtp-180/), a monthly talk series at The Frontier in Research Triangle Park, presented by RTI International.
 
-At RTP180, I keep the show fun and engaging, make the speakers look great, and facilitate Q&A with the audience.
+At RTP180, I kept the show fun and engaging, made the speakers look great, and facilitated Q&A with the audience.
 
 {% twitter https://twitter.com/laserllama/status/1174872841487114240?s=20 %}
 
