@@ -4,6 +4,8 @@
 
 // - - - - - - - - - - - - - - - - - -
 
+@use "sass:math";
+
 .gallery {
 	visibility: hidden;
 	position: relative;
@@ -40,22 +42,16 @@
 
 .gallery--carousel {
 
-	.gallery__wrap {
+	.gallery__wrap {}
 
-	}
-	
-	.gallery__item {
-
-	}
+	.gallery__item {}
 
 	.gallery__item__link {
 		display: block;
 		pointer-events: none;
 	}
 
-	.gallery__item__image {
-
-	}
+	.gallery__item__image {}
 
 	.owl-nav {
 		display: none;
@@ -91,14 +87,14 @@
 .gallery--grid {
 
 	.gallery__wrap {
-		margin-left: -$grid-spacing/2;
-		margin-right: -$grid-spacing/2;
+		margin-left: math.div(-$grid-spacing, 2);
+		margin-right: math.div(-$grid-spacing, 2);
 	}
-	
+
 	.gallery__item {
 		float: left;
 		width: 50%;
-		padding: $grid-spacing/2;
+		padding: math.div($grid-spacing, 2);
 	}
 
 	.gallery__item__link {
@@ -176,6 +172,3 @@
 		}
 	}
 }
-
-
-
