@@ -1,0 +1,24 @@
+name: Verify
+on: pull_request
+
+jobs:
+  verify:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.3.3
+      - name: Install dependencies
+        run: |
+          gem install bundler --version=2.5.11
+          bundle install
+
+      - name: Run Standard
+        run: bundle exec standardrb
+      - name: Run Bundler Audit
+        run: bundle exec bundler-audit --update
+
