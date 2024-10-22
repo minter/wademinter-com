@@ -18,7 +18,7 @@ Here's some stuff about me that you might not know:
 * I am an advisor for [Momentum Learning](https://momentumlearn.com) in Durham, and have hired several Momentum graduates
 * I was manager / artistic director of [ComedySportz San Antonio](https://cszsa.com) for two years
 * I have held advisory positions at: [iSport360](https://isport360.com/), [Learn Platform](https://learnplatform.com/), and [Epifany](https://www.epifany.com)
-* I am not on Facebook, Twitter, or Instagram
+* I am not on Facebook or Twitter
 * I have a goalie mask is painted in a *Hitchhiker's Guide To The Galaxy* theme
 * I take my family Christmas card photo every year in a different hockey jersey
 * I produced an improv festival that featured future Saturday Night Live star Vanessa Bayer

@@ -29,8 +29,6 @@ From 2018-2023, I was the host of [RTP180](https://frontier.rtp.org/rtp-180/), a
 
 At RTP180, I kept the show fun and engaging, made the speakers look great, and facilitated Q&A with the audience.
 
-{% twitter https://twitter.com/laserllama/status/1174872841487114240?s=20 %}
-
 Between March 2020 - July 2021, with the COVID pandemic, I worked with The Frontier to innovate an online version of RTP180, acting as a virtual host for the panel, and adapting to the needs of a Zoom-based format to keep the show engaging and educational.
 
 ---

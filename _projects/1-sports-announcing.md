@@ -18,16 +18,11 @@ Since 2015, I have been the Public Address Announcer at PNC Arena for the Nation
 
 > "hey, I attended my first Canes game last Friday (from the UK) and whilst this may sound weird, just wanted to commend you on your outstanding announcing throughout, really enhanced the experience. This was my 22nd NHL arena and you’re the best! Top job!" --[Chris Roderick](https://twitter.com/croderick1982/status/1103789471579938816?s=20)
 
-> "This is breathtaking. Everyone in PNC Arena screaming along with
-@minter calling the goal and assists." --[Sara Civian](https://twitter.com/SaraCivian/status/1113976493632315393)
-
-{% twitternocache https://twitter.com/corylav/status/1117928558721208320 %}
+> "This is breathtaking. Everyone in PNC Arena screaming along with @minter calling the goal and assists." --[Sara Civian](https://twitter.com/SaraCivian/status/1113976493632315393)
 
 ### Scoring Goals, Making SportsCenter
 
 On February 14, 2016, I entered the record books as the first person to announce their own first NHL goal.
-
-{% twitternocache https://twitter.com/Canes/status/698985421460545536?s=20 %}
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/aoKOmg7SHSY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -49,8 +44,6 @@ People have written some nice things about me:
 ### Photos and Memories
 
 I've even been able to announce the starting lineup for the Durham Bulls, Hurricanes-style.
-
-{% twitternocache https://twitter.com/minter/status/1032772809758580737?s=20 %}
 
 Here are some memories from my years on the mic for the Canes
 
