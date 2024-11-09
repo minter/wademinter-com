@@ -10,15 +10,15 @@ menu_settings:
   menu_items:
     - title: "Things I Do"
       url: "/"
-    # - title: 'Things I Write'
-    #   url: '/blog/'
+    - title: "Things I Write"
+      url: "/blog/"
     - title: "About Me"
       url: "/about"
     - title: "Contact Me"
       url: "/contact"
 
 footer_settings:
-  footer_tagline: Public Address Announcer, Technology Executive, Improvisor, Speaker. Raleigh, NC
+  footer_tagline: PA Announcer, Tech Executive, Developer, Speaker. Raleigh, NC
 
 hero_settings:
   overlay_opacity: 0.8
