@@ -12,7 +12,7 @@ inherit_gem:
 
 AllCops:
   NewCops: enable
-  TargetRubyVersion: 3.3.5
+  TargetRubyVersion: 3.3.6
   Exclude:
     - "db/**/*"
     - "script/*"
@@ -71,4 +71,3 @@ Style/HashTransformValues:
 Style/StringLiterals:
   Enabled: true
   EnforcedStyle: double_quotes
-

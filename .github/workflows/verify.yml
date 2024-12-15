@@ -11,10 +11,10 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.3.5
+          ruby-version: 3.3.6
       - name: Install dependencies
         run: |
-          gem install bundler --version=2.5.21
+          gem install bundler --version=2.5.23
           bundle install
 
       - name: Run Standard
