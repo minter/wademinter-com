@@ -11,10 +11,10 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.4.4
+          ruby-version: 3.4.5
       - name: Install dependencies
         run: |
-          gem install bundler --version=2.6.9
+          gem install bundler --version=2.7.1
           bundle install
 
       - name: Run Standard
