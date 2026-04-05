@@ -1,13 +1,13 @@
 ---
 title: 'Technology Leadership'
 subtitle: 'My career as a product-focused engineering leader'
-date: 2020-12-18 22:00:00
+date: 2026-04-04 22:00:00
 description: I have built and led engineering teams at companies like TeamSnap, Adwerx, WeaveUp, Custom Communications, and more. Find out more about my work history and skills.
 featured_image: '/images/site/wade-amanda.jpg'
 permalink: '/resume'
 ---
 
-![](/images/site/oscon-2016.jpg)
+![Wade Minter speaking at OSCON 2016](/images/site/oscon-2016.jpg)
 
 ## My Career
 
@@ -19,23 +19,11 @@ For a full list of roles, visit [my LinkedIn page](https://linkedin.com/in/minte
 
 ---
 
-### Product Principal - [Dualboot Partners](https://dualbootpartners.com/)
-#### 2020 - Present
-
-<img src="/images/site/dbp-logo.png" style="float: right; margin: 1em;">
-
-Dualboot Partners works with management teams to deliver digital solutions from strategy through implementation. We are seasoned technology veterans with a long and proven track record of building new products, iterating on in-market products, and re-platforming legacy systems.
-
-Our capabilities include product innovation, strategy, design, front and backend development, fractional CTO, QA, and PMO. We are fluent in almost every modern technology stack.
-
-As Product Principal, I provide technical and product leadership, along with client management, to clients across the fields of Finance, Health, Fitness, Retail, Shipping, B2B SaaS, Internal Tools, and more.
-
----
-
 ### Founder and CTO - [Suggestion Ox](https://suggestionox.com/)
+
 #### 2015 - Present
 
-<img src="/images/site/software/sox-logo.png" style="float: right; margin: 1em;">
+![Suggestion Ox logo](/images/site/software/sox-logo.png){: style="float: right; margin: 1em;"}
 
 We're the online suggestion box that makes it easy to find out what you're not hearing before small problems become big problems. 100% private, secure, and anonymous.
 
@@ -45,10 +33,25 @@ Top organizations use Suggestion Ox for employee feedback, customer insights, re
 
 ---
 
+### Product Principal - [Dualboot Partners](https://dualbootpartners.com/)
+
+#### 2020 - 2026
+
+![Dualboot Partners logo](/images/site/dbp-logo.png){: style="float: right; margin: 1em;"}
+
+Dualboot Partners works with management teams to deliver digital solutions from strategy through implementation. We are seasoned technology veterans with a long and proven track record of building new products, iterating on in-market products, and re-platforming legacy systems.
+
+Our capabilities include product innovation, strategy, design, front and backend development, fractional CTO, QA, and PMO. We are fluent in almost every modern technology stack.
+
+As Product Principal, I provide technical and product leadership, along with client management, to clients across the fields of Finance, Health, Fitness, Retail, Shipping, B2B SaaS, Internal Tools, and more.
+
+---
+
 ### Head of Engineering - [Custom Communications Inc.](https://ccicustom.com/)
+
 #### 2017 - 2020
 
-<img src="/images/site/cci-logo.png" style="float: right; margin: 1em;">
+![Custom Communications logo](/images/site/cci-logo.png){: style="float: right; margin: 1em;"}
 
 Reporting to the CEO, led a globally distributed team of developers, building applications to streamline & automate both the operations of field service technicians and relationships with multiple data providers. Instituted new processes to increase developer happiness and business value, dramatically increasing time to delivery, system performance, and reputation of engineering team to rest of the organization. Overhauled dev team through strategic hiring and performance management actions to improve internal collaboration and drive results.
 
@@ -60,13 +63,13 @@ Reporting to the CEO, led a globally distributed team of developers, building ap
 
 > Let me sing the praises of this awesome human being! Working for and with Wade has been a real privilege. He's a straight shooter, an open and honest communicator, a thoughtful and supportive manager, and demonstrably committed to the professional development and diversity of his team members. And no matter how tight the deadlines or uphill the battle, you can always count on Wade for words encouragement or praise -- delivered with wit and good humor every time. I've grown and improved as a professional under his leadership, and I'm grateful to him for all he's done. --Amy Gori
 
-
 ---
 
 ### Product Manager - [NBC SportsEngine](https://sportsengine.com/)
+
 #### 2016 - 2017
 
-<img src="/images/site/sportsengine-logo.png" style="float: right; margin: 1em;">
+![NBC SportsEngine logo](/images/site/sportsengine-logo.png){: style="float: right; margin: 1em;"}
 
 Reporting to the Director of Product, oversaw web & mobile product development focused on teams, coaches, players and parents. Built & led global, cross-functional product team (developers, product owners, UI, QA), collaborating extensively with Engineering/UI, Sales, Support, Marketing, and Executive teams to align around a compelling, delightful roadmap. Led a team of two additional Product Owners.
 
@@ -79,8 +82,10 @@ Reporting to the Director of Product, oversaw web & mobile product development f
 ---
 
 ### Head of Engineering - [Adwerx](https://adwerx.com/)
+
 #### 2014 - 2015
-<img src="/images/site/adwerx-logo.png" style="float: right; margin: 1em;">
+
+![Adwerx logo](/images/site/adwerx-logo.png){: style="float: right; margin: 1em;"}
 
 Reporting to the CEO, built & managed Engineering (Development, DevOps, QA), more than doubling staff size from 5 to 12 in nine months while spinning Adwerx out from its former parent company. As a senior executive, participated in tech pitch events, provided technology insight to BizDev for partner deals, and worked closely with Ops and Dev to mentor and provide advanced technical expertise.
 
@@ -97,9 +102,10 @@ Reporting to the CEO, built & managed Engineering (Development, DevOps, QA), mor
 ---
 
 ### Founding Team, CTO - [TeamSnap](https://teamsnap.com/) (Acquired 2021)
+
 #### 2006 - 2014
 
-<img src="/images/site/teamsnap-logo.png" style="float: right; margin: 1em;">
+![TeamSnap logo](/images/site/teamsnap-logo.png){: style="float: right; margin: 1em;"}
 
 As part of the founding team, grew product from an interesting side project into a worldwide industry leader in the sports management space. Built Engineering from 4 part-time developers to a team of 15+ . Worked extensively with external technology partners and evaluating options for integration. Built API developer community, innovated compelling product features and originated the company’s voice on social media. TeamSnap was [acquired in 2021 by Waud Capital](https://www.teamsnap.com/blog/announcements/teamsnap-partners-with-waud-capital-to-accelerate-expansion).
 ​
@@ -116,8 +122,9 @@ As part of the founding team, grew product from an interesting side project into
 ## Education
 
 ### [The College of William & Mary](https://wm.edu/)
+
 #### B.S., Computer Science
 
-<img src="/images/site/wm-logo.png" style="float: left; margin-right: 1em;">
+![William & Mary logo](/images/site/wm-logo.png){: style="float: left; margin-right: 1em;"}
 
 Received my B.S. in Computer Science from the nation's second-oldest university. Worked on the school newspaper *The Flat Hat* all four years as a writer, Features Page editor, and Opinions editor. Created the first online presence for both *The Flat Hat* and the William & Mary Athletics Department.

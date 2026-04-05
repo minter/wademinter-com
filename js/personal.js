@@ -184,10 +184,11 @@
 			// Set up gallery container
 			$this.append('<div class="gallery__wrap"></div>');
 
-			// Add images to container
-			$this.children('img').each( function() {
+			// Add images to container (direct imgs or imgs from markdown inside the div)
+			$this.children('img').add( $this.children('p').children('img') ).each( function() {
 				$(this).appendTo('#' + thisId + ' .gallery__wrap');
 			});
+			$this.children('p:empty').remove();
 
 			// Wrap images
 			$this.find('.gallery__wrap img').each( function() {

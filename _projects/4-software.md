@@ -9,20 +9,28 @@ permalink: '/software'
 
 ## Software That I Have Written
 
-I have a few software projects that I work on, either by myself or with friends, because I enjoy using technology to solve problems that I see in the world. If you'd like to take a look at some of what I've written, here's how to find it!
+I have a few software projects that I work on, either by myself or with
+friends, because I enjoy using technology to solve problems that I see in the
+world. If you'd like to take a look at some of what I've written, here's how to
+find it!
 
-<img src="/images/site/software/mx-voice-icon.png" style="float: right; margin: 1em;">
+![Mx. Voice app icon][mx-voice-icon]{: style="float: right; margin: 1em;"}
 
 ## [Mx. Voice](https://mxvoice.app)
+
 ### Audio software for improv shows
 
 **Site**: [mxvoice.app](https://mxvoice.app)
 
 **Code**: [github.com/minter/mxvoice-electron](https://github.com/minter/mxvoice-electron)
 
-A rewritten version of [​Mr. Voice](https://github.com/minter/mrvoice), the software that powered sound in dozens of ComedySportz clubs since 2000. Mx. Voice is a desktop application for Windows and OS X that is designed to make finding and playing sound cues during improv shows as easy as possible.
+A rewritten version of [​Mr. Voice](https://github.com/minter/mrvoice), the
+software that powered sound in dozens of ComedySportz clubs since 2000. Mx.
+Voice is a desktop application for Windows and OS X that is designed to make
+finding and playing sound cues during improv shows as easy as possible.
 
 **Technologies**:
+
 * Electron.js
 * Node
 * jQuery
@@ -34,16 +42,21 @@ A rewritten version of [​Mr. Voice](https://github.com/minter/mrvoice), the so
 
 ---
 
-<img src="/images/site/software/rosterflash-icon.png" style="float: right; margin: 1em;">
+![RosterFlash app icon][rosterflash-icon]{: style="float: right; margin: 1em;"}
 
 ## [RosterFlash](https://rosterflash.com/)
+
 ### Get alerted when your team's lineup changes
 
 **Site**: [rosterflash.com](https://rosterflash.com/)
 
-A companion app to [TeamSnap](https://teamsnap.com/), RosterFlash sends you an alert if a member of your team changes their availability close to game time. That way, you know immediately if you need to change your lineup plans. Uses TeamSnap's OAuth login for authentication.
+A companion app to [TeamSnap](https://teamsnap.com/), RosterFlash sends you an
+alert if a member of your team changes their availability close to game time.
+That way, you know immediately if you need to change your lineup plans. Uses
+TeamSnap's OAuth login for authentication.
 
 **Technologies**:
+
 * Ruby on Rails 6
 * Sidekiq
 * OAuth 2
@@ -53,17 +66,30 @@ A companion app to [TeamSnap](https://teamsnap.com/), RosterFlash sends you an a
 * TeamSnap API
 
 ---
-<img src="/images/site/software/tesla-logo.png" style="float: right; margin: 1em;">
+
+![Tesla logo][tesla-logo]{: style="float: right; margin: 1em;"}
 
 ## [TeslaPuck](https://github.com/minter/tesla_puck)
+
 ### Get your Tesla ready to head home after the game
 
 **Code**: [github.com/minter/tesla_puck](https://github.com/minter/tesla_puck)
 
-A fun personal project that mashes up the NHL StatsWeb API and the Tesla vehicle API. If my car is parked at PNC Arena for a [Carolina Hurricanes](https://www.nhl.com/hurricanes/) game, TeslaPuck monitors the NHL API to see if the game has gone final. If so, it uses the Tesla API to turn on climate control in my car and set the navigation for home. If the Canes win, it honks the horn and flashes the lights in celebration! Configurable for other teams/cars/arenas.
+A fun personal project that mashes up the NHL StatsWeb API and the Tesla
+vehicle API. If my car is parked at PNC Arena for a [Carolina
+Hurricanes](https://www.nhl.com/hurricanes/) game, TeslaPuck monitors the NHL API
+to see if the game has gone final. If so, it uses the Tesla API to turn on
+climate control in my car and set the navigation for home. If the Canes win, it
+honks the horn and flashes the lights in celebration! Configurable for other
+teams/cars/arenas.
 
-Technologies:
+**Technologies**:
+
 * Ruby
 * Sidekiq
 * NHL StatsWeb API
 * Tesla API
+
+[mx-voice-icon]: /images/site/software/mx-voice-icon.png
+[rosterflash-icon]: /images/site/software/rosterflash-icon.png
+[tesla-logo]: /images/site/software/tesla-logo.png
