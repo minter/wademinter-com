@@ -7,10 +7,13 @@ Personal website for H. Wade Minter. Built with [Astro](https://astro.build/) an
 ```
 /
 ├── public/
-│   └── images/              # Static images (site, blog, gallery)
+│   ├── images/              # Static images (site, blog, gallery)
+│   ├── CNAME                # GitHub Pages custom domain
+│   ├── favicon.svg          # SVG favicon (WM initials)
+│   └── robots.txt           # Search engine directives
 ├── src/
 │   ├── components/          # Reusable Astro components
-│   │   ├── Header.astro     # Site header + navigation
+│   │   ├── Header.astro     # Site header, nav, dark mode toggle
 │   │   ├── Footer.astro     # Site footer + social links
 │   │   ├── Hero.astro       # Hero banner with image overlay
 │   │   ├── ProjectCard.astro # Image-overlay card for homepage
@@ -19,17 +22,24 @@ Personal website for H. Wade Minter. Built with [Astro](https://astro.build/) an
 │   │   ├── blog/            # Blog posts (Markdown)
 │   │   └── projects/        # Project pages (Markdown)
 │   ├── layouts/
-│   │   ├── BaseLayout.astro # Root HTML layout (head, analytics, fonts)
+│   │   ├── BaseLayout.astro # Root HTML layout (head, SEO, analytics, dark mode)
 │   │   ├── PageLayout.astro # Static pages (hero + prose content)
 │   │   └── ProjectLayout.astro # Project pages (hero + prose content)
 │   ├── pages/               # Route pages (each file = a URL)
 │   ├── styles/
-│   │   └── global.css       # Tailwind imports, theme colors, prose styles
+│   │   └── global.css       # Tailwind imports, theme colors, prose styles, dark mode
 │   └── content.config.ts    # Content collection schemas
-├── astro.config.mjs         # Astro + Tailwind config
+├── functions/               # DigitalOcean serverless functions
+│   ├── packages/site/contact/ # Contact form handler (Mailgun)
+│   ├── project.yml          # DO Functions config
+│   └── README.md            # Function deployment instructions
+├── astro.config.mjs         # Astro + Tailwind + sitemap config
+├── .npmrc                   # npm config (legacy-peer-deps)
 └── .github/workflows/
     ├── deploy.yml           # Build + deploy to GitHub Pages on push to main
-    └── verify.yml           # Build check on pull requests
+    ├── verify.yml           # Build check on pull requests
+    ├── lighthouse.yml       # Lighthouse audit on pull requests
+    └── link-checker.yml     # Weekly broken link check
 ```
 
 ## Development
@@ -53,12 +63,15 @@ title: 'Your Post Title'
 date: 2026-04-05
 description: A short summary for previews and SEO.
 featured_image: '/images/blog/your-image.jpg'
+bskyPostUri: 'at://did:plc:your-did/app.bsky.feed.post/abc123def'  # optional
 ---
 
 Your content here.
 ```
 
 The post will automatically appear on the `/blog/` index page, sorted by date (newest first). The URL will be `/blog/<filename>/` (e.g., `src/content/blog/my-new-post.md` becomes `/blog/my-new-post/`).
+
+If `bskyPostUri` is provided, Bluesky replies to that post will appear as comments on the blog post (via `@bryanguffey/astro-standard-site`).
 
 ### Project Pages
 
@@ -73,6 +86,7 @@ subtitle: 'A short tagline'
 date: 2026-04-05
 description: Description shown on the homepage card.
 featured_image: '/images/site/your-image.jpg'
+image_position: center  # optional: top, center, bottom, or any CSS object-position
 permalink: '/my-project'
 sort_order: 5
 ---
@@ -83,6 +97,7 @@ Your content here.
 - `sort_order` controls the display order on the homepage (lower numbers appear first).
 - `permalink` defines the URL path for the project page.
 - `featured_image` is used for both the homepage card and the hero banner.
+- `image_position` adjusts how the hero image is cropped (default: `center`).
 
 **2. Route page** -- create a matching `.astro` file in `src/pages/`:
 
@@ -133,7 +148,7 @@ Place image files in `public/images/` and reference them with absolute paths sta
 
 ### Photo Galleries
 
-Use a `<div class="gallery">` in Markdown content to create a responsive grid:
+Use a `<div class="gallery">` in Markdown content to create a responsive grid with lightbox:
 
 ```markdown
 <div class="gallery">
@@ -147,7 +162,7 @@ Use a `<div class="gallery">` in Markdown content to create a responsive grid:
 </div>
 ```
 
-The gallery displays as 3 columns on desktop, 2 on tablet, and 1 on mobile.
+The gallery displays as 3 columns on desktop, 2 on tablet, and 1 on mobile. Clicking an image opens a full-screen lightbox.
 
 ### Bluesky Comments
 
@@ -179,13 +194,32 @@ Find your DID at [bsky.app/settings](https://bsky.app/settings).
 - **Navigation menu**: Edit the `menuItems` array in `src/components/Header.astro`
 - **Social links**: Edit the `socials` array in `src/components/Socials.astro`
 - **Footer tagline**: Edit directly in `src/components/Footer.astro`
-- **Contact form**: The form in `src/pages/contact.astro` submits to [smartforms.dev](https://smartforms.dev)
 - **Analytics**: Google Analytics (GA4) is configured in `src/layouts/BaseLayout.astro`
+
+### Contact Form
+
+The contact form submits to a DigitalOcean serverless function that sends email via Mailgun. See `functions/README.md` for deployment and configuration details.
+
+### Dark Mode
+
+Dark mode is toggled via the sun/moon icon in the header. It respects the visitor's system preference on first visit and persists their choice in `localStorage`. The theme is applied before render to prevent flash of wrong theme, and re-applied on view transitions.
+
+Dark mode colors are defined alongside light mode in `src/styles/global.css` and component-level Tailwind `dark:` variants.
 
 ### Theming
 
 Colors, fonts, and prose typography are defined in `src/styles/global.css`. The site uses the Muli font from Google Fonts and Tailwind CSS for utility classes. Theme colors are registered as CSS custom properties under `@theme` so they can be referenced in Tailwind classes (e.g., `text-[var(--color-accent)]`).
 
+### SEO
+
+Meta tags are managed by the `astro-seo` package via a single `<SEO />` component in `BaseLayout.astro`. Open Graph, Twitter Cards, canonical URLs, and a default social sharing image (`/images/social.jpg`) are handled automatically based on page props.
+
 ## Deployment
 
-The site deploys automatically to GitHub Pages when changes are pushed to `main`. The workflow is defined in `.github/workflows/deploy.yml`. Pull requests run a build check via `.github/workflows/verify.yml`.
+The site deploys automatically to GitHub Pages when changes are pushed to `main`. The workflow is defined in `.github/workflows/deploy.yml`. Pull requests run:
+- **Build check** (`verify.yml`)
+- **Lighthouse audit** (`lighthouse.yml`) — errors if accessibility or SEO scores drop below 0.9
+
+A weekly **link checker** (`link-checker.yml`) scans for broken links every Monday.
+
+**Dependabot** checks for npm dependency updates weekly.
