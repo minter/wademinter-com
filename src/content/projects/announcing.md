@@ -115,6 +115,16 @@ I'm also the Public Address Announcer and DJ for the NC State Icepack, the club 
 
 ---
 
+## Charity and Community Events
+
+I also volunteer my announcing skills for charity events in the Triangle area:
+
+* **Carolina Sled Classic** — PA announcer for the Triangle Special Hockey Association's sled hockey tournament (2016-2019)
+* **Bank of America Bowl** — PA announcer for the Holt Brothers Foundation charity football game (2019-2020)
+* **Charity Football Game** — PA announcer for the Alzheimer's Association benefit (2015-2019)
+
+---
+
 ## GOUGE Professional Wrestling
 
 From 2011-2024, I was the ring announcer for GOUGE Professional Wrestling in Raleigh. As a longtime wrestling fan, it was always a treat to step between the ropes and get a crowd excited about local professional wrestling.
