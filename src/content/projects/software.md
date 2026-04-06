@@ -27,8 +27,11 @@ dozens of [ComedySportz](https://www.csz.com/) clubs since 2000. Mx. Voice
 is a desktop app for Windows and macOS that makes finding and playing
 sound cues during improv shows as fast and reliable as possible.
 
-Built with Electron and Node.js. Actively developed since 2000 in various
-forms — from the original Perl/Tk version to today's Electron app.
+Built with Electron, Electron Builder, Node.js, SQLite, WaveSurfer.js,
+Howler, Bootstrap, Playwright, and Vitest. Actively developed since 2000
+in various forms — from the original Perl/Tk version to today's Electron app.
+
+![Mx. Voice desktop application](/images/site/software/mxvoice-screenshot.png)
 
 ---
 
@@ -45,9 +48,12 @@ together, Family Feud-style faceoffs, raffles, bingo, prediction contests,
 and physical challenges like puck stacking. Integrates with the NHL API
 for automatic roster imports and team branding.
 
-Built with Electron and vanilla JavaScript. Designed for live event use
-with dual-monitor support, game lifecycle management, and per-party
-configuration.
+Built with Electron, Electron Builder, Anthropic, Express.js, WebSocket,
+ngrok, Firebase, the NHL API, Stream Deck, and Playwright. Designed for
+live event use by any NHL team, with dual-monitor support, game lifecycle
+management, and per-party configuration.
+
+![Watch Party Games display window](/images/site/software/watch-party-games-screenshot.png)
 
 ---
 
@@ -64,7 +70,9 @@ Configurable for any NHL team. Runs via Docker with Redis for state
 management. The successor to a previous Twitter-based goal bot that was
 retired when that platform went sideways.
 
-Built with Ruby. Open source.
+Built with Ruby on Rails, Sidekiq, Redis, Bluesky, and the NHL API. Open source.
+
+![Rod The Bot posting a goal update on Bluesky](/images/site/software/rod-the-bot-screenshot.png)
 
 ---
 
@@ -77,9 +85,9 @@ the Carolina Hurricanes from across Bluesky. Pulls Canes-related content
 out of the hockey timeline using keywords, hashtags (#LetsGoCanes,
 #RaiseUp), and account tracking.
 
-Runs as a self-hosted feed service with a Ruby backend, PostgreSQL, and
-Redis. Includes tooling for managing banned accounts, suspended account
-cleanup, and feed metadata updates via the ATProto API.
+Built with Sinatra, GoLang, OpenAI, Anthropic, Bluesky, Sidekiq, Redis,
+and PostgreSQL. Includes tooling for managing banned accounts, suspended
+account cleanup, and feed metadata updates via the ATProto API.
 
 ---
 
@@ -94,6 +102,8 @@ OAuth login for authentication.
 
 Built with Ruby on Rails, Sidekiq, and Redis.
 
+![RosterFlash web application](/images/site/software/rosterflash-screenshot.png)
+
 ---
 
 ## [Suggestion Ox](https://suggestionox.com/)
@@ -105,4 +115,6 @@ hearing before small problems become big problems. Trusted by over 50,000
 companies, associations, and government agencies including Samsung,
 Hilton, and the US Air Force.
 
-I'm the founder and CTO. Built with Ruby on Rails.
+I'm the founder and CTO. Built with Ruby on Rails, Node.js, Sidekiq, Puma, AWS (EC2, RDS, ElastiCache, DynamoDB), Terraform, Ansible, and Mailgun.
+
+![Suggestion Ox web application](/images/site/software/suggestion-ox-screenshot.png)
