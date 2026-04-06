@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro'
 import Hero from '../../components/Hero.astro'
 import Comments from '@bryanguffey/astro-standard-site/components/Comments.astro'
+import { generateDocumentLinkTag } from '@bryanguffey/astro-standard-site'
 import { getCollection, render } from 'astro:content'
 
 export async function getStaticPaths() {
@@ -14,9 +15,14 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props
 const { Content } = await render(post)
+
+const DID = 'did:plc:c7vyv3rfip6mejhnzairvkd3'
+const headExtra = post.data.atprotoRkey
+  ? generateDocumentLinkTag({ did: DID, documentRkey: post.data.atprotoRkey })
+  : undefined
 ---
 
-<BaseLayout title={post.data.title} description={post.data.description} featuredImage={post.data.featured_image} ogType="article">
+<BaseLayout title={post.data.title} description={post.data.description} featuredImage={post.data.featured_image} ogType="article" headExtra={headExtra}>
   {post.data.featured_image && (
     <Hero title={post.data.title} image={post.data.featured_image} />
   )}

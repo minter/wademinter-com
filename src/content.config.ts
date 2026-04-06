@@ -23,6 +23,7 @@ const blog = defineCollection({
     featured_image: z.string(),
     date: z.coerce.date(),
     bskyPostUri: z.string().optional(),
+    atprotoRkey: z.string().optional(),
   }),
 })
 

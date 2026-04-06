@@ -10,9 +10,10 @@ interface Props {
   description?: string
   featuredImage?: string
   ogType?: string
+  headExtra?: string
 }
 
-const { title, description = '', featuredImage, ogType = 'website' } = Astro.props
+const { title, description = '', featuredImage, ogType = 'website', headExtra } = Astro.props
 const siteTitle = 'H. Wade Minter'
 const fullTitle = Astro.url.pathname === '/' ? `${siteTitle} – ${title}` : `${title} – ${siteTitle}`
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href
@@ -66,6 +67,8 @@ const imageUrl = featuredImage ? new URL(featuredImage, Astro.site).href : defau
 
   <!-- Identity verification -->
   <link rel="me" href="https://bsky.app/profile/wademinter.com" />
+
+  {headExtra && <Fragment set:html={headExtra} />}
 
   <!-- View Transitions -->
   <ClientRouter />

@@ -67,6 +67,7 @@ date: 2026-04-05
 description: A short summary for previews and SEO.
 featured_image: '/images/blog/your-image.jpg'
 bskyPostUri: 'at://did:plc:your-did/app.bsky.feed.post/abc123def'  # optional
+atprotoRkey: '3abc123xyz789'                                        # optional
 ---
 
 Your content here.
@@ -74,7 +75,14 @@ Your content here.
 
 The post will automatically appear on the `/blog/` index page, sorted by date (newest first). The URL will be `/blog/<filename>/` (e.g., `src/content/blog/my-new-post.md` becomes `/blog/my-new-post/`).
 
-If `bskyPostUri` is provided, Bluesky replies to that post will appear as comments on the blog post (via `@bryanguffey/astro-standard-site`).
+**Full workflow for a new blog post:**
+
+1. Create the markdown file with `title`, `date`, `description`, `featured_image`
+2. Push to main — site builds, deploys, and syncs the post to ATProto automatically
+3. Share on Bluesky, then get the AT-URI of your Bluesky post
+4. Add `bskyPostUri` to the frontmatter (enables federated comments)
+5. Get the document rkey from the deploy logs or `pdsls.dev`, add `atprotoRkey` (enables per-document verification)
+6. Push again — comments and verification are now live
 
 ### Project Pages
 
