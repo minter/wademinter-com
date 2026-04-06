@@ -37,11 +37,9 @@ Top organizations use Suggestion Ox for employee feedback, customer insights, re
 
 #### 2020 - 2026
 
-Dualboot Partners works with management teams to deliver digital solutions from strategy through implementation. We are seasoned technology veterans with a long and proven track record of building new products, iterating on in-market products, and re-platforming legacy systems.
+Dualboot Partners works with management teams to deliver digital solutions from strategy through implementation, with a long and proven track record of building new products, iterating on in-market products, and re-platforming legacy systems.
 
-Our capabilities include product innovation, strategy, design, front and backend development, fractional CTO, QA, and PMO. We are fluent in almost every modern technology stack.
-
-As Product Principal, I provide technical and product leadership, along with client management, to clients across the fields of Finance, Health, Fitness, Retail, Shipping, B2B SaaS, Internal Tools, and more.
+As Product Principal, I provided technical and product leadership, along with client management, to clients across the fields of Finance, Health, Fitness, Retail, Shipping, B2B SaaS, Internal Tools, and more.
 
 ---
 
