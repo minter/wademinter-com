@@ -3,6 +3,7 @@ title: 'Bluesky, Domain Names, and Decentralized Identity'
 date: 2024-11-09
 description: Thoughts about the utility of domain names in the age of decentralized identity.
 featured_image: '/images/blog/social-media-user-unknkown.jpg'
+bskyPostUri: 'at://did:plc:c7vyv3rfip6mejhnzairvkd3/app.bsky.feed.post/3lajvkx3f722r'
 ---
 
 ## This could have been a thread
