@@ -3,7 +3,7 @@ title: 'Code'
 subtitle: 'Software I build at the intersection of hockey, improv, and technology'
 date: 2020-12-18
 description: I build software that solves problems I care about — from improv comedy audio tools to NHL game bots to interactive fan experiences.
-featured_image: '/images/site/atom-screenshot.png'
+featured_image: '/images/site/cursor-screenshot.png'
 permalink: '/software'
 sort_order: 4
 ---
