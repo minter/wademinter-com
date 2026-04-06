@@ -149,6 +149,28 @@ Use a `<div class="gallery">` in Markdown content to create a responsive grid:
 
 The gallery displays as 3 columns on desktop, 2 on tablet, and 1 on mobile.
 
+### Bluesky Comments
+
+Blog posts can display Bluesky replies as comments. To enable:
+
+1. Publish your blog post and share it on Bluesky
+2. Get the AT-URI of your Bluesky post (click `...` > "Copy post link", then convert to AT-URI format: `at://did:plc:YOUR_DID/app.bsky.feed.post/POST_ID`)
+3. Add it to your post's frontmatter:
+
+```yaml
+---
+title: 'My Post'
+date: 2026-04-05
+description: ...
+featured_image: ...
+bskyPostUri: 'at://did:plc:your-did/app.bsky.feed.post/abc123def'
+---
+```
+
+4. Rebuild the site -- replies to that Bluesky post will appear as comments
+
+Find your DID at [bsky.app/settings](https://bsky.app/settings).
+
 ## Configuration
 
 ### Site Settings

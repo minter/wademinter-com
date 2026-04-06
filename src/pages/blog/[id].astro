@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro'
 import Hero from '../../components/Hero.astro'
+import Comments from '@bryanguffey/astro-standard-site/components/Comments.astro'
 import { getCollection, render } from 'astro:content'
 
 export async function getStaticPaths() {
@@ -25,4 +26,14 @@ const { Content } = await render(post)
     </time>
     <Content />
   </article>
+
+  {post.data.bskyPostUri && (
+    <section class="max-w-3xl mx-auto px-6 pb-12">
+      <h2 class="text-2xl font-bold mb-6">Comments</h2>
+      <Comments
+        bskyPostUri={post.data.bskyPostUri}
+        canonicalUrl={Astro.url.href}
+      />
+    </section>
+  )}
 </BaseLayout>

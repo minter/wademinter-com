@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css'
+import { SEO } from 'astro-seo'
 import { ClientRouter } from 'astro:transitions'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
@@ -15,7 +16,8 @@ const { title, description = '', featuredImage, ogType = 'website' } = Astro.pro
 const siteTitle = 'H. Wade Minter'
 const fullTitle = Astro.url.pathname === '/' ? `${siteTitle} – ${title}` : `${title} – ${siteTitle}`
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href
-const imageUrl = featuredImage ? new URL(featuredImage, Astro.site).href : undefined
+const defaultImage = new URL('/images/social.jpg', Astro.site).href
+const imageUrl = featuredImage ? new URL(featuredImage, Astro.site).href : defaultImage
 ---
 
 <!doctype html>
@@ -25,23 +27,29 @@ const imageUrl = featuredImage ? new URL(featuredImage, Astro.site).href : undef
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="/images/favicon.png">
 
-  <title>{fullTitle}</title>
-  <meta name="description" content={description}>
-  <link rel="canonical" href={canonicalUrl} />
-
-  <!-- Open Graph -->
-  <meta property="og:type" content={ogType} />
-  <meta property="og:title" content={fullTitle} />
-  <meta property="og:description" content={description} />
-  <meta property="og:url" content={canonicalUrl} />
-  <meta property="og:site_name" content={siteTitle} />
-  {imageUrl && <meta property="og:image" content={imageUrl} />}
-
-  <!-- Twitter / Social Cards -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content={fullTitle} />
-  <meta name="twitter:description" content={description} />
-  {imageUrl && <meta name="twitter:image" content={imageUrl} />}
+  <SEO
+    title={fullTitle}
+    description={description}
+    canonical={canonicalUrl}
+    openGraph={{
+      basic: {
+        title: fullTitle,
+        type: ogType,
+        image: imageUrl || '',
+        url: canonicalUrl,
+      },
+      optional: {
+        siteName: siteTitle,
+        description,
+      },
+    }}
+    twitter={{
+      card: 'summary_large_image',
+      title: fullTitle,
+      description,
+      image: imageUrl,
+    }}
+  />
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title={siteTitle} href="/rss.xml" />

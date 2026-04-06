@@ -22,6 +22,7 @@ const blog = defineCollection({
     description: z.string(),
     featured_image: z.string(),
     date: z.coerce.date(),
+    bskyPostUri: z.string().optional(),
   }),
 })
 
