@@ -80,8 +80,16 @@ The post will automatically appear on the `/blog/` index page, sorted by date (n
 1. Create the markdown file with `title`, `date`, `description`, `featured_image`
 2. Push to main — site builds, deploys, and syncs the post to ATProto automatically
 3. Share the post on Bluesky
-4. Get the `bskyPostUri`: click `...` on your Bluesky post > "Copy post link" — the URL will look like `https://bsky.app/profile/wademinter.com/post/abc123def`. Convert to AT-URI format: `at://did:plc:c7vyv3rfip6mejhnzairvkd3/app.bsky.feed.post/abc123def`
-5. Get the `atprotoRkey`: check the deploy workflow's "Sync posts to ATProto" step logs for the `→` output line, or look up your documents at [pdsls.dev/at://did:plc:c7vyv3rfip6mejhnzairvkd3/site.standard.document](https://pdsls.dev/at://did:plc:c7vyv3rfip6mejhnzairvkd3/site.standard.document) — the rkey is the last segment of the AT-URI
+4. Get the `bskyPostUri`: copy the post URL from Bluesky (e.g., `https://bsky.app/profile/wademinter.com/post/abc123def`), then convert to AT-URI:
+   ```sh
+   # Replace abc123def with the post ID from the Bluesky URL
+   echo "at://did:plc:c7vyv3rfip6mejhnzairvkd3/app.bsky.feed.post/abc123def"
+   ```
+5. Get the `atprotoRkey`: list your published documents on ATProto:
+   ```sh
+   curl -s "https://bsky.social/xrpc/com.atproto.repo.listRecords?repo=did:plc:c7vyv3rfip6mejhnzairvkd3&collection=site.standard.document&limit=100" | jq '.records[] | {path: .value.path, rkey: (.uri | split("/") | last)}'
+   ```
+   Or check the deploy workflow's "Sync posts to ATProto" step logs — the rkey is printed after each sync.
 6. Add both values to the post's frontmatter and push again — comments and verification are now live
 
 ### Project Pages
