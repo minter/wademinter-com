@@ -11,95 +11,87 @@ sort_order: 3
 
 ![Wade Minter speaking to a conference audience](/images/site/ato-audience.jpg)
 
-## A captivating and engaging speaker
+I've spent over a decade getting up in front of people and talking about the things I care about: building great software, supporting junior developers, using improv to make teams better, and having fun while doing it. I also emcee events — keeping shows moving, making speakers look great, and giving audiences an energetic experience.
 
-I enjoy getting out in front of people and talking about my passions: Great
-software, diverse development teams, supporting entry-level developers, and
-having a customer-focused mindset. I also emcee events - providing an
-entertaining and energetic experience for conference-goers.
+> Wade has been an incredible supporter of our region's entrepreneurial and innovation ecosystem and we are so grateful for his leadership. He is consistently kind, creative, generous, and not to mention hilarious — a true joy to work with. --Bridget Harrington, Executive Director of Innovate Raleigh
 
-> I had the absolute pleasure of working with Wade during the Innovate Raleigh
-> Summit. Wade has been an incredible supporter of our region's entrepreneurial
-> and innovation ecosystem and we are so grateful for his leadership. He is
-> consistently kind, creative, generous, and not to mention hilarious -- a true
-> joy to work with. I sincerely hope that we have the opportunity to work
-> together again. --Bridget Harrington, Executive Director of Innovate Raleigh
-
-One of my most popular workshops is my applied improv training. In only a few
-hours, I can take a group of introverted strangers and teach them about
-collaboration, listening, ideation, empathy, and more!
-
-Here's a sampling of where I've spoken. I'd love to add your event to the
-list!
+If you'd like me to speak at or emcee your event, [get in touch](/contact).
 
 ---
 
-## RTP180
+## Featured Talks
+
+### Building Weird Things With The National Hockey League Using Ruby!
+
+What happens when an NHL PA announcer who writes Ruby decides to automate his car, build game bots, and generally mash up hockey APIs with everything?
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5FoxERw7F2Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Building a Pipeline: The Case for Hiring Junior Developers
+
+Why your team needs junior developers, how to find them, and how to set them up for success. Delivered at both OSCON US and OSCON Europe (London).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oL7H1aCJcxg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### You Code Like a Sysadmin
+
+On impostor syndrome, career identity, and what happens when you realize the label you've been given doesn't match the work you actually do.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZjdqP-REoqc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
+## What I Talk About
+
+**Improv for technologists** — My most popular workshop. In a few hours, I take a group of introverted strangers and teach them about collaboration, listening, ideation, and empathy using applied improv techniques. I've delivered this at OSCON, LISA, RailsConf, and corporate events.
+
+**Supporting junior developers** — Why hiring junior developers is a strategic advantage, not a burden. How to build a pipeline, onboard effectively, and create a culture where new developers thrive.
+
+**Building user-focused software** — Lessons from building products for blue-collar users, sports teams, and non-technical audiences. What changes when your users aren't developers.
+
+**The weird intersection of hockey and tech** — Bots, APIs, announcer software, and what it's like to be a technologist inside professional sports.
+
+---
+
+## Emceeing
 
 ![Wade Minter hosting RTP180, seen from behind at the mic](/images/site/rtp-180-back.jpg)
 
-From 2018-2023, I was the host of [RTP180](https://frontier.rtp.org/rtp-180/), a
-monthly talk series at The Frontier in Research Triangle Park, presented by RTI
-International.
+From 2018-2023, I was the host of [RTP180](https://frontier.rtp.org/rtp-180/), a monthly talk series at The Frontier in Research Triangle Park, presented by RTI International. I kept the show fun and engaging, made the speakers look great, and facilitated Q&A with the audience. When COVID hit, I helped adapt the show to a virtual format and kept it running as a Zoom-based event from March 2020 through July 2021.
 
-At RTP180, I kept the show fun and engaging, made the speakers look great, and
-facilitated Q&A with the audience.
-
-Between March 2020 - July 2021, with the COVID pandemic, I worked with The
-Frontier to innovate an online version of RTP180, acting as a virtual host for
-the panel, and adapting to the needs of a Zoom-based format to keep the show
-engaging and educational.
+I've also emceed the Innovate Raleigh Summit, Innovate Raleigh Candidates Forum, High Five Conference, and the Startup Pitch Contest at All Things Open.
 
 ---
 
-## Speaking History
+## Full Speaking History
 
-* 2022 North Carolina Chef Showdown, presented by the North Carolina
-  Restaurant and Lodging Association - August 2022
-* [You (Yes, You) Need to Support Junior Developers][space-apps-nyc] - Space
-  Apps NYC Symposium October 2021
-* [Building Weird Things With With The National Hockey League Using
-  Ruby!][bwt-nhl] - !!Con, May 2021
-* Emcee - Innovate Raleigh Candidates Forum, August 2019
-* Emcee - High Five, March 2019
-* You (Yes, You) Need to Support Junior Developers - Abstractions Conf, August
-  2019
-* Emcee, Innovate Raleigh Summit, November 2018
-* Startup Pitch Contest Emcee - All Things Open, October 2018
-* Building Compelling Software For Blue Collar Users - All Things Open, October
-  2018
-* Building Software For Blue-Collar Users - Fluent, June 2018
-* "Plays Well With Others": Improv For Nerds - RailsConf, April 2018
-* Improv For Marketers - High Five Conference, February 2017
-* Plays Well With Others - Applied Improv For Technologists - LISA, December
-  2016
-* [Building a pipeline: The case for hiring junior developers][pipeline-eu] -
-  OSCON Europe (London), October 2016
-* [Building a pipeline: The case for hiring junior developers][pipeline-us] -
-  OSCON, May 2016
-* Improve Your Team With Improv - OSCON Europe (Amsterdam), October 2015
-* "You code like a sysadmin" - Impostor Syndrome for the modern developer -
-  OSCON, July 2015
-* Improv For Sysadmins - LISA, November 2015
-* [You Code Like a Syadmin][code-like-sysadmin] - LISA, November 2014
-* [Remote Work Panel][remote-work-lisa] - LISA, November 2014
-* Improv: Think, React, Go! - LISA, November 2014
-* Improv: Think, React, Go! - OSCON, July 2014
-* Improve Your Team With Improv - OSCON, July 2013
-* [Wide Teams Podcast][wide-teams] - September 2012
-* Build A Better Team With Improv - OSCON, July 2012
-* [Customer Service for Sysadmins][cust-svc-sysadmins] - Large Installation
-  System Administration (LISA), December 2011
-* Using OpenStack APIs: Present And Future - OSCON, July 2011
-* Customer Service For Nerds - OSCON, July 2011
-* Build a Better Team with Improv - OSCON, July 2011
-* Leveraging the Cloud for Web 2.0 Applications - Web 2.0 Expo, May 2010
-
-[space-apps-nyc]: https://youtu.be/Rba-ypJwx2A?t=12522
-[bwt-nhl]: https://www.youtube.com/watch?v=5FoxERw7F2Y
-[pipeline-eu]: https://www.youtube.com/watch?v=5TEpCd1m3HQ
-[pipeline-us]: https://www.youtube.com/watch?v=oL7H1aCJcxg
-[code-like-sysadmin]: https://www.youtube.com/watch?v=ZjdqP-REoqc
-[remote-work-lisa]: https://www.youtube.com/watch?v=vB92Znb6GS4
-[wide-teams]: https://www.wideteams.com/2012/09/12/episode-49-wade-minter-and-andrew-berkowitz-of-teamsnap/
-[cust-svc-sysadmins]: https://www.youtube.com/watch?v=OPSBNWLy9mA
+* North Carolina Chef Showdown — NC Restaurant and Lodging Association
+* [You (Yes, You) Need to Support Junior Developers](https://youtu.be/Rba-ypJwx2A?t=12522) — Space Apps NYC Symposium
+* [Building Weird Things With The NHL Using Ruby!](https://www.youtube.com/watch?v=5FoxERw7F2Y) — !!Con
+* Emcee — Innovate Raleigh Candidates Forum
+* Emcee — High Five
+* You (Yes, You) Need to Support Junior Developers — Abstractions Conf
+* Emcee — Innovate Raleigh Summit
+* Startup Pitch Contest Emcee — All Things Open
+* Building Compelling Software For Blue Collar Users — All Things Open
+* Building Software For Blue-Collar Users — Fluent
+* "Plays Well With Others": Improv For Nerds — RailsConf
+* Improv For Marketers — High Five Conference
+* Plays Well With Others: Applied Improv For Technologists — LISA
+* [Building a Pipeline: Hiring Junior Developers](https://www.youtube.com/watch?v=5TEpCd1m3HQ) — OSCON Europe (London)
+* [Building a Pipeline: Hiring Junior Developers](https://www.youtube.com/watch?v=oL7H1aCJcxg) — OSCON
+* Improve Your Team With Improv — OSCON Europe (Amsterdam)
+* Improv For Sysadmins — LISA
+* "You Code Like a Sysadmin": Impostor Syndrome for the Modern Developer — OSCON
+* [You Code Like a Sysadmin](https://www.youtube.com/watch?v=ZjdqP-REoqc) — LISA
+* [Remote Work Panel](https://www.youtube.com/watch?v=vB92Znb6GS4) — LISA
+* Improv: Think, React, Go! — LISA
+* Improv: Think, React, Go! — OSCON
+* Improve Your Team With Improv — OSCON
+* [Wide Teams Podcast](https://www.wideteams.com/2012/09/12/episode-49-wade-minter-and-andrew-berkowitz-of-teamsnap/)
+* Build A Better Team With Improv — OSCON
+* [Customer Service for Sysadmins](https://www.youtube.com/watch?v=OPSBNWLy9mA) — LISA
+* Using OpenStack APIs: Present And Future — OSCON
+* Customer Service For Nerds — OSCON
+* Build a Better Team with Improv — OSCON
+* Leveraging the Cloud for Web 2.0 Applications — Web 2.0 Expo
