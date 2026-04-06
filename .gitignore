@@ -28,3 +28,6 @@ functions/packages/**/__deployer__.zip
 
 # jetbrains setting folder
 .idea/
+
+# Claude Code
+.claude/
