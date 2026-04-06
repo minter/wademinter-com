@@ -1,0 +1,8 @@
+packages:
+  - name: site
+    environment:
+      MAILGUN_API_KEY: "${MAILGUN_API_KEY}"
+    functions:
+      - name: contact
+        runtime: nodejs:22
+        web: true
