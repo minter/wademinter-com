@@ -18,6 +18,11 @@ pnpm-debug.log*
 .env.production
 functions/.env
 
+# DO Functions build artifacts
+functions/.deployed/
+functions/packages/**/package-lock.json
+functions/packages/**/__deployer__.zip
+
 # macOS-specific files
 .DS_Store
 
