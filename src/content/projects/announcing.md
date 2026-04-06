@@ -2,7 +2,7 @@
 title: 'Sports Announcing'
 subtitle: 'The voice of the Carolina Hurricanes and NC State Icepack'
 date: 2020-12-18
-description: I am the arena public address announcer for the National Hockey League's Carolina Hurricanes and ACCHL's NC State Icepack, along with the ring announcer for GOUGE Professional Wrestling.
+description: I am the arena public address announcer for the NHL's Carolina Hurricanes and the NC State Icepack.
 featured_image: '/images/site/wade-canes-mic.jpg'
 image_position: top
 permalink: '/announcing'
