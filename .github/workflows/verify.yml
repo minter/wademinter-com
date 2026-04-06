@@ -8,17 +8,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          ruby-version: 4.0.2
+          node-version: 22
+          cache: npm
       - name: Install dependencies
-        run: |
-          gem install bundler --version=2.7.1
-          bundle install
-
-      - name: Run Standard
-        run: bundle exec standardrb
-      - name: Run Bundler Audit
-        run: bundle exec bundler-audit --update
-
+        run: npm ci
+      - name: Build
+        run: npx astro build

@@ -1,0 +1,71 @@
+---
+const menuItems = [
+  { title: 'Things I Do', url: '/' },
+  { title: 'Things I Write', url: '/blog/' },
+  { title: 'About Me', url: '/about' },
+  { title: 'Contact Me', url: '/contact' },
+]
+---
+
+<header class="bg-white border-b border-[var(--color-border)]">
+  <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="/" class="text-2xl font-bold tracking-tight text-[var(--color-text-dark)] hover:text-[var(--color-accent)] transition-colors">
+      H. Wade Minter
+    </a>
+
+    <!-- Mobile menu button -->
+    <button
+      id="menu-toggle"
+      class="md:hidden p-2 text-[var(--color-text-medium)] hover:text-[var(--color-text-dark)]"
+      aria-label="Toggle menu"
+    >
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path id="menu-icon-open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        <path id="menu-icon-close" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+
+    <!-- Desktop nav -->
+    <nav class="hidden md:block">
+      <ul class="flex gap-6">
+        {menuItems.map(item => (
+          <li>
+            <a
+              href={item.url}
+              class="text-[15px] font-semibold text-[var(--color-text-medium)] hover:text-[var(--color-accent)] transition-colors"
+            >
+              {item.title}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Mobile nav -->
+  <nav id="mobile-menu" class="hidden md:hidden border-t border-[var(--color-border)]">
+    <ul class="px-6 py-4 space-y-3">
+      {menuItems.map(item => (
+        <li>
+          <a
+            href={item.url}
+            class="block text-lg font-semibold text-[var(--color-text-medium)] hover:text-[var(--color-accent)] transition-colors"
+          >
+            {item.title}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+</header>
+
+<script is:inline>
+  document.getElementById('menu-toggle').addEventListener('click', () => {
+    const menu = document.getElementById('mobile-menu');
+    const iconOpen = document.getElementById('menu-icon-open');
+    const iconClose = document.getElementById('menu-icon-close');
+    menu.classList.toggle('hidden');
+    iconOpen.classList.toggle('hidden');
+    iconClose.classList.toggle('hidden');
+  });
+</script>

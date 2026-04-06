@@ -1,0 +1,12 @@
+---
+import ProjectLayout from '../layouts/ProjectLayout.astro'
+import { getCollection, render } from 'astro:content'
+
+const projects = await getCollection('projects')
+const project = projects.find(p => p.data.permalink === '/software')!
+const { Content } = await render(project)
+---
+
+<ProjectLayout {...project.data}>
+  <Content />
+</ProjectLayout>

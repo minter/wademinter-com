@@ -1,0 +1,17 @@
+---
+import Socials from './Socials.astro'
+
+const year = new Date().getFullYear()
+---
+
+<footer class="bg-[var(--color-bg-alt)] border-t border-[var(--color-border)] mt-12">
+  <div class="max-w-5xl mx-auto px-6 py-10 text-center">
+    <p class="text-[var(--color-text-medium)] mb-4">
+      PA Announcer, Tech Executive, Developer, Speaker. Raleigh, NC
+    </p>
+    <Socials />
+    <p class="text-sm text-[var(--color-text-light)] mt-6">
+      &copy; {year} H. Wade Minter
+    </p>
+  </div>
+</footer>

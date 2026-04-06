@@ -1,0 +1,20 @@
+---
+import BaseLayout from './BaseLayout.astro'
+import Hero from '../components/Hero.astro'
+
+interface Props {
+  title: string
+  subtitle?: string
+  description: string
+  featured_image: string
+}
+
+const { title, subtitle, description, featured_image } = Astro.props
+---
+
+<BaseLayout title={title} description={description} featuredImage={featured_image}>
+  <Hero title={title} subtitle={subtitle} image={featured_image} />
+  <article class="max-w-3xl mx-auto px-6 py-12 prose">
+    <slot />
+  </article>
+</BaseLayout>

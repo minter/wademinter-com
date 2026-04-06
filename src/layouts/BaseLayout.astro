@@ -1,0 +1,131 @@
+---
+import '../styles/global.css'
+import { ClientRouter } from 'astro:transitions'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+
+interface Props {
+  title: string
+  description?: string
+  featuredImage?: string
+  ogType?: string
+}
+
+const { title, description = '', featuredImage, ogType = 'website' } = Astro.props
+const siteTitle = 'H. Wade Minter'
+const fullTitle = Astro.url.pathname === '/' ? `${siteTitle} – ${title}` : `${title} – ${siteTitle}`
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href
+const imageUrl = featuredImage ? new URL(featuredImage, Astro.site).href : undefined
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/images/favicon.png">
+
+  <title>{fullTitle}</title>
+  <meta name="description" content={description}>
+  <link rel="canonical" href={canonicalUrl} />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content={ogType} />
+  <meta property="og:title" content={fullTitle} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonicalUrl} />
+  <meta property="og:site_name" content={siteTitle} />
+  {imageUrl && <meta property="og:image" content={imageUrl} />}
+
+  <!-- Twitter / Social Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={fullTitle} />
+  <meta name="twitter:description" content={description} />
+  {imageUrl && <meta name="twitter:image" content={imageUrl} />}
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title={siteTitle} href="/rss.xml" />
+
+  <!-- View Transitions -->
+  <ClientRouter />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <script defer src="https://use.fontawesome.com/releases/v6.7.1/js/solid.js" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v6.7.1/js/brands.js" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v6.7.1/js/fontawesome.js" crossorigin="anonymous"></script>
+
+  <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M2Q38EYFGX"></script>
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-M2Q38EYFGX');
+  </script>
+</head>
+<body class="min-h-screen flex flex-col">
+  <Header />
+  <main class="flex-1">
+    <slot />
+  </main>
+  <Footer />
+
+  <!-- Lazy-load images in prose/gallery content -->
+  <script is:inline>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.prose img, .gallery img').forEach(function(img) {
+        img.setAttribute('loading', 'lazy');
+        img.setAttribute('decoding', 'async');
+      });
+    });
+  </script>
+
+  <!-- Lightbox for gallery images -->
+  <script is:inline>
+    document.addEventListener('DOMContentLoaded', function() {
+      var galleries = document.querySelectorAll('.gallery');
+      if (!galleries.length) return;
+
+      var lightbox = document.createElement('div');
+      lightbox.className = 'lightbox';
+      lightbox.innerHTML = '<img src="" alt=""><div class="lightbox-caption"></div>';
+      document.body.appendChild(lightbox);
+
+      var lbImg = lightbox.querySelector('img');
+      var lbCaption = lightbox.querySelector('.lightbox-caption');
+
+      galleries.forEach(function(gallery) {
+        gallery.querySelectorAll('img').forEach(function(img) {
+          img.addEventListener('click', function() {
+            lbImg.src = img.src;
+            lbImg.alt = img.alt;
+            lbCaption.textContent = img.alt;
+            lightbox.style.display = 'flex';
+            requestAnimationFrame(function() {
+              lightbox.classList.add('active');
+            });
+          });
+        });
+      });
+
+      lightbox.addEventListener('click', function() {
+        lightbox.classList.remove('active');
+        setTimeout(function() {
+          lightbox.style.display = 'none';
+        }, 200);
+      });
+
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+          lightbox.click();
+        }
+      });
+    });
+  </script>
+</body>
+</html>

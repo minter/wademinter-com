@@ -1,0 +1,105 @@
+---
+title: 'Public Speaking'
+subtitle: 'As a conference speaker and emcee, I am guaranteed to entertain'
+date: 2020-12-18
+description: From tech conferences to panel discussions to keeping your show moving, I can speak on a wide range of topics or be the host with the most.
+featured_image: '/images/site/innovate-raleigh-2018.jpg'
+image_position: top
+permalink: '/speaking'
+sort_order: 3
+---
+
+![Wade Minter speaking to a conference audience](/images/site/ato-audience.jpg)
+
+## A captivating and engaging speaker
+
+I enjoy getting out in front of people and talking about my passions: Great
+software, diverse development teams, supporting entry-level developers, and
+having a customer-focused mindset. I also emcee events - providing an
+entertaining and energetic experience for conference-goers.
+
+> I had the absolute pleasure of working with Wade during the Innovate Raleigh
+> Summit. Wade has been an incredible supporter of our region's entrepreneurial
+> and innovation ecosystem and we are so grateful for his leadership. He is
+> consistently kind, creative, generous, and not to mention hilarious -- a true
+> joy to work with. I sincerely hope that we have the opportunity to work
+> together again. --Bridget Harrington, Executive Director of Innovate Raleigh
+
+One of my most popular workshops is my applied improv training. In only a few
+hours, I can take a group of introverted strangers and teach them about
+collaboration, listening, ideation, empathy, and more!
+
+Here's a sampling of where I've spoken. I'd love to add your event to the
+list!
+
+---
+
+## RTP180
+
+![Wade Minter hosting RTP180, seen from behind at the mic](/images/site/rtp-180-back.jpg)
+
+From 2018-2023, I was the host of [RTP180](https://frontier.rtp.org/rtp-180/), a
+monthly talk series at The Frontier in Research Triangle Park, presented by RTI
+International.
+
+At RTP180, I kept the show fun and engaging, made the speakers look great, and
+facilitated Q&A with the audience.
+
+Between March 2020 - July 2021, with the COVID pandemic, I worked with The
+Frontier to innovate an online version of RTP180, acting as a virtual host for
+the panel, and adapting to the needs of a Zoom-based format to keep the show
+engaging and educational.
+
+---
+
+## Speaking History
+
+* 2022 North Carolina Chef Showdown, presented by the North Carolina
+  Restaurant and Lodging Association - August 2022
+* [You (Yes, You) Need to Support Junior Developers][space-apps-nyc] - Space
+  Apps NYC Symposium October 2021
+* [Building Weird Things With With The National Hockey League Using
+  Ruby!][bwt-nhl] - !!Con, May 2021
+* Emcee - Innovate Raleigh Candidates Forum, August 2019
+* Emcee - High Five, March 2019
+* You (Yes, You) Need to Support Junior Developers - Abstractions Conf, August
+  2019
+* Emcee, Innovate Raleigh Summit, November 2018
+* Startup Pitch Contest Emcee - All Things Open, October 2018
+* Building Compelling Software For Blue Collar Users - All Things Open, October
+  2018
+* Building Software For Blue-Collar Users - Fluent, June 2018
+* "Plays Well With Others": Improv For Nerds - RailsConf, April 2018
+* Improv For Marketers - High Five Conference, February 2017
+* Plays Well With Others - Applied Improv For Technologists - LISA, December
+  2016
+* [Building a pipeline: The case for hiring junior developers][pipeline-eu] -
+  OSCON Europe (London), October 2016
+* [Building a pipeline: The case for hiring junior developers][pipeline-us] -
+  OSCON, May 2016
+* Improve Your Team With Improv - OSCON Europe (Amsterdam), October 2015
+* "You code like a sysadmin" - Impostor Syndrome for the modern developer -
+  OSCON, July 2015
+* Improv For Sysadmins - LISA, November 2015
+* [You Code Like a Syadmin][code-like-sysadmin] - LISA, November 2014
+* [Remote Work Panel][remote-work-lisa] - LISA, November 2014
+* Improv: Think, React, Go! - LISA, November 2014
+* Improv: Think, React, Go! - OSCON, July 2014
+* Improve Your Team With Improv - OSCON, July 2013
+* [Wide Teams Podcast][wide-teams] - September 2012
+* Build A Better Team With Improv - OSCON, July 2012
+* [Customer Service for Sysadmins][cust-svc-sysadmins] - Large Installation
+  System Administration (LISA), December 2011
+* Using OpenStack APIs: Present And Future - OSCON, July 2011
+* Customer Service For Nerds - OSCON, July 2011
+* Build a Better Team with Improv - OSCON, July 2011
+* Leveraging the Cloud for Web 2.0 Applications - Web 2.0 Expo, May 2010
+
+[space-apps-nyc]: https://youtu.be/Rba-ypJwx2A?t=12522
+[bwt-nhl]: https://www.youtube.com/watch?v=5FoxERw7F2Y
+[pipeline-eu]: https://www.youtube.com/watch?v=5TEpCd1m3HQ
+[pipeline-us]: https://www.youtube.com/watch?v=oL7H1aCJcxg
+[code-like-sysadmin]: https://www.youtube.com/watch?v=ZjdqP-REoqc
+[remote-work-lisa]: https://www.youtube.com/watch?v=vB92Znb6GS4
+[wide-teams]: https://www.wideteams.com/2012/09/12/episode-49-wade-minter-and-andrew-berkowitz-of-teamsnap/
+[cust-svc-sysadmins]: https://www.youtube.com/watch?v=OPSBNWLy9mA

@@ -1,0 +1,45 @@
+---
+interface Props {
+  title: string
+  subtitle?: string
+  image: string
+  imagePosition?: string
+  showSocials?: boolean
+}
+
+const { title, subtitle, image, imagePosition = 'center', showSocials = false } = Astro.props
+---
+
+<section class="relative overflow-hidden">
+  <div class="absolute inset-0">
+    <img src={image} alt="" class="w-full h-full object-cover" style={`object-position: ${imagePosition}`} />
+    <div class="absolute inset-0 bg-[var(--color-hero-bg)] opacity-80"></div>
+  </div>
+  <div class="relative max-w-5xl mx-auto px-6 py-20 md:py-28">
+    <h1 class="text-3xl md:text-5xl font-bold text-[var(--color-hero-text)] leading-tight tracking-tight max-w-3xl">
+      {title}
+    </h1>
+    {subtitle && (
+      <p class="mt-4 text-lg md:text-xl text-[var(--color-hero-text)] opacity-80">
+        {subtitle}
+      </p>
+    )}
+    {showSocials && (
+      <div class="mt-6">
+        <style>
+          .hero-socials .socials a {
+            color: var(--color-hero-text);
+          }
+          .hero-socials .socials a:hover {
+            color: var(--color-accent);
+          }
+        </style>
+        <div class="hero-socials">
+          <Fragment>
+            <slot name="socials" />
+          </Fragment>
+        </div>
+      </div>
+    )}
+  </div>
+</section>
