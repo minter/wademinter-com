@@ -1,0 +1,25 @@
+---
+const socials = [
+  { name: 'Bluesky', url: 'https://bsky.app/profile/wademinter.com', icon: 'fa-bluesky' },
+  { name: 'GitHub', url: 'https://github.com/minter', icon: 'fa-github' },
+  { name: 'LinkedIn', url: 'https://linkedin.com/in/minter', icon: 'fa-linkedin' },
+  { name: 'TikTok', url: 'https://tiktok.com/@wminter42', icon: 'fa-tiktok' },
+]
+---
+
+<ul class="flex justify-center gap-4">
+  {socials.map(social => (
+    <li>
+      <a
+        href={social.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center justify-center w-10 h-10 rounded-full text-[var(--color-text-medium)] dark:text-gray-400 hover:text-[var(--color-accent)] hover:bg-white dark:hover:bg-gray-700 transition-all"
+        title={social.name}
+      >
+        <i class={`fa-brands ${social.icon}`} aria-hidden="true"></i>
+        <span class="sr-only">{social.name}</span>
+      </a>
+    </li>
+  ))}
+</ul>

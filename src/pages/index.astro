@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import Hero from '../components/Hero.astro'
+import Socials from '../components/Socials.astro'
+import ProjectCard from '../components/ProjectCard.astro'
+import { getCollection } from 'astro:content'
+
+const projects = (await getCollection('projects')).sort((a, b) => a.data.sort_order - b.data.sort_order)
+---
+
+<BaseLayout
+  title="Technology Leader, NHL PA Announcer, Speaker"
+  description="Wade Minter is a technology executive, NHL Public Address Announcer, Improv Comedian, and Public Speaker in Raleigh, North Carolina."
+  featuredImage="/images/site/wade-rtp180.jpg"
+>
+  <Hero
+    title="Technology Executive, NHL PA Announcer, Engineering Leader, Improv Comedian, Public Speaker"
+    subtitle="I lead a very weird life."
+    image="/images/site/wade-rtp180.jpg"
+    imagePosition="top"
+    showSocials={true}
+  >
+    <Socials slot="socials" />
+  </Hero>
+
+  <section class="max-w-6xl mx-auto px-6 py-16">
+    <p class="text-xl text-[var(--color-text-medium)] dark:text-gray-400 text-center mb-12 max-w-2xl mx-auto">
+      I'm Wade Minter — a technology leader, NHL arena announcer, and improv comedian based in Raleigh, NC. Here's what I'm up to.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      {projects.map(project => (
+        <ProjectCard
+          title={project.data.title}
+          subtitle={project.data.subtitle}
+          description={project.data.description}
+          image={project.data.featured_image}
+          url={project.data.permalink}
+        />
+      ))}
+    </div>
+  </section>
+</BaseLayout>

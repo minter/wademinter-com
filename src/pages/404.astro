@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import Hero from '../components/Hero.astro'
+---
+
+<BaseLayout title="Page Not Found" description="Sorry – the page you are looking for is not here.">
+  <Hero
+    title="We let that one in."
+    subtitle="The page you're looking for got past us."
+    image="/images/site/wade-goalie-404.jpg"
+  />
+  <div class="max-w-3xl mx-auto px-6 py-12 text-center">
+    <p class="text-lg text-[var(--color-text-medium)] mb-6">Maybe the URL was offside, or the page got sent to the penalty box. Either way, it's not here.</p>
+    <a href="/" class="inline-block px-8 py-3 bg-[var(--color-accent)] text-white font-semibold rounded-md hover:opacity-90 transition-opacity">
+      Head back to center ice
+    </a>
+  </div>
+</BaseLayout>

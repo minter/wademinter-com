@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import Hero from '../../components/Hero.astro'
+import Comments from '@bryanguffey/astro-standard-site/components/Comments.astro'
+import { getCollection, render } from 'astro:content'
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog')
+  return posts.map(post => ({
+    params: { id: post.id },
+    props: { post },
+  }))
+}
+
+const { post } = Astro.props
+const { Content } = await render(post)
+---
+
+<BaseLayout title={post.data.title} description={post.data.description} featuredImage={post.data.featured_image} ogType="article">
+  {post.data.featured_image && (
+    <Hero title={post.data.title} image={post.data.featured_image} />
+  )}
+  <article class="max-w-3xl mx-auto px-6 py-12 prose">
+    <time class="text-sm text-[var(--color-text-light)] block mb-6">
+      {post.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+    </time>
+    <Content />
+  </article>
+
+  {post.data.bskyPostUri && (
+    <section class="max-w-3xl mx-auto px-6 pb-12">
+      <h2 class="text-2xl font-bold mb-6">Comments</h2>
+      <Comments
+        bskyPostUri={post.data.bskyPostUri}
+        canonicalUrl={Astro.url.href}
+      />
+    </section>
+  )}
+</BaseLayout>

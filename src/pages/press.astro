@@ -1,0 +1,47 @@
+---
+import PageLayout from '../layouts/PageLayout.astro'
+---
+
+<PageLayout
+  title="Press Kit"
+  subtitle="Bio, headshot, and details for media and event organizers."
+  description="Press kit for Wade Minter — bio, headshot, and speaking topics for media, conferences, and events."
+  featured_image="/images/site/wade-headshot.jpg"
+>
+  <h2>Short Bio</h2>
+
+  <p>
+    Wade Minter is a technology executive, NHL Public Address Announcer, and public speaker based in Raleigh, North Carolina. He is the founder and CTO of <a href="https://suggestionox.com">Suggestion Ox</a>, the Public Address Announcer for the NHL's Carolina Hurricanes, and a longtime improv comedian and workshop facilitator. He has spoken at conferences including OSCON, RailsConf, LISA, and All Things Open on topics ranging from applied improv to hiring junior developers to building software for non-technical users.
+  </p>
+
+  <h2>Headshot</h2>
+
+  <div class="flex flex-col sm:flex-row gap-6 items-start">
+    <img src="/images/site/wade-headshot.jpg" alt="Wade Minter headshot" class="rounded-md w-48" />
+    <div>
+      <p>Click below to download a high-resolution version (7MB, JPEG).</p>
+      <a
+        href="/images/site/wade-headshot-highres.jpg"
+        download="wade-minter-headshot.jpg"
+        class="inline-block mt-2 px-6 py-2 bg-[var(--color-accent)] text-white! font-semibold rounded-md hover:opacity-90 transition-opacity no-underline"
+      >
+        Download High-Res Headshot
+      </a>
+    </div>
+  </div>
+
+  <h2>Speaking Topics</h2>
+
+  <ul>
+    <li><strong>Improv for technologists</strong> — Applied improv workshops teaching collaboration, listening, ideation, and empathy</li>
+    <li><strong>Supporting junior developers</strong> — Why hiring junior developers is a strategic advantage, and how to set them up for success</li>
+    <li><strong>Building user-focused software</strong> — Lessons from building products for blue-collar users, sports teams, and non-technical audiences</li>
+    <li><strong>Hockey meets tech</strong> — Bots, APIs, announcer software, and what it's like to be a technologist inside professional sports</li>
+  </ul>
+
+  <h2>Contact</h2>
+
+  <p>
+    For speaking inquiries, interviews, or press requests, <a href="/contact">get in touch</a> or email <code>wade AT wademinter DOT com</code>.
+  </p>
+</PageLayout>
