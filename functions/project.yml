@@ -6,3 +6,6 @@ packages:
       - name: contact
         runtime: nodejs:22
         web: true
+      - name: watchparty-contact
+        runtime: nodejs:22
+        web: true
