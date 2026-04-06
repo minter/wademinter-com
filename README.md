@@ -29,6 +29,9 @@ Personal website for H. Wade Minter. Built with [Astro](https://astro.build/) an
 │   ├── styles/
 │   │   └── global.css       # Tailwind imports, theme colors, prose styles, dark mode
 │   └── content.config.ts    # Content collection schemas
+├── scripts/                 # ATProto publishing scripts
+│   ├── create-publication.ts # One-time: register blog on ATProto
+│   └── sync-to-atproto.ts  # Sync blog posts to ATProto (runs in CI)
 ├── functions/               # DigitalOcean serverless functions
 │   ├── packages/site/contact/ # Contact form handler (Mailgun)
 │   ├── project.yml          # DO Functions config
@@ -214,12 +217,39 @@ Colors, fonts, and prose typography are defined in `src/styles/global.css`. The 
 
 Meta tags are managed by the `astro-seo` package via a single `<SEO />` component in `BaseLayout.astro`. Open Graph, Twitter Cards, canonical URLs, and a default social sharing image (`/images/social.jpg`) are handled automatically based on page props.
 
+### ATProto / standard.site Publishing
+
+Blog posts are automatically synced to the ATProto network after deployment, making them readable on [Leaflet](https://leaflet.pub/), [WhiteWind](https://whitewind.pages.dev/), and other ATProto readers. A verification endpoint at `/.well-known/site.standard.publication` proves content ownership.
+
+**Manual sync** (if needed):
+```sh
+ATPROTO_APP_PASSWORD="your-password" npx tsx scripts/sync-to-atproto.ts
+```
+
+The sync script is idempotent — it updates existing posts and only creates new records for new posts.
+
+**One-time setup** (already done):
+- `scripts/create-publication.ts` — registers the blog as an ATProto publication
+- `src/pages/.well-known/site.standard.publication.ts` — verification endpoint
+
 ## Deployment
 
-The site deploys automatically to GitHub Pages when changes are pushed to `main`. The workflow is defined in `.github/workflows/deploy.yml`. Pull requests run:
+The site deploys automatically to GitHub Pages when changes are pushed to `main`. The workflow is defined in `.github/workflows/deploy.yml` and includes three jobs:
+1. **Build** — builds the Astro site
+2. **Deploy** — deploys to GitHub Pages
+3. **Sync ATProto** — syncs blog posts to the ATProto network (requires `ATPROTO_APP_PASSWORD` secret)
+
+Pull requests run:
 - **Build check** (`verify.yml`)
 - **Lighthouse audit** (`lighthouse.yml`) — errors if accessibility or SEO scores drop below 0.9
 
 A weekly **link checker** (`link-checker.yml`) scans for broken links every Monday.
 
 **Dependabot** checks for npm dependency updates weekly.
+
+### Required Secrets
+
+| Secret | Where | Purpose |
+|--------|-------|---------|
+| `ATPROTO_APP_PASSWORD` | GitHub Actions | ATProto post sync after deploy |
+| `MAILGUN_API_KEY` | DO Functions `.env` | Contact form email delivery |

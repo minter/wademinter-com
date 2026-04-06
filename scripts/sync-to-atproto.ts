@@ -4,6 +4,7 @@ import { join } from 'path';
 
 const BLOG_DIR = join(import.meta.dirname, '..', 'src', 'content', 'blog');
 const SITE_URL = 'https://wademinter.com';
+const DID = 'did:plc:c7vyv3rfip6mejhnzairvkd3';
 
 const publisher = new StandardSitePublisher({
   identifier: 'wademinter.com',
@@ -11,6 +12,18 @@ const publisher = new StandardSitePublisher({
 });
 
 await publisher.login();
+
+// Fetch existing documents to avoid duplicates
+const existingRes = await fetch(
+  `https://bsky.social/xrpc/com.atproto.repo.listRecords?repo=${DID}&collection=site.standard.document&limit=100`
+);
+const existingData = await existingRes.json();
+const existingPaths = new Map<string, string>();
+for (const record of existingData.records || []) {
+  if (record.value?.path) {
+    existingPaths.set(record.value.path, record.uri.split('/').pop());
+  }
+}
 
 const files = readdirSync(BLOG_DIR).filter(f => f.endsWith('.md'));
 
@@ -36,26 +49,48 @@ for (const file of files) {
 
   const body = fmMatch[2];
   const slug = file.replace(/\.md$/, '');
+  const postPath = `/blog/${slug}`;
 
   const transformed = transformContent(body, {
     siteUrl: SITE_URL,
-    postPath: `/blog/${slug}`,
+    postPath,
   });
 
-  const result = await publisher.publishDocument({
-    site: SITE_URL,
-    path: `/blog/${slug}`,
-    title: frontmatter.title,
-    description: frontmatter.description,
-    content: {
-      $type: 'site.standard.content.markdown',
-      text: transformed.markdown,
-      version: '1.0',
-    },
-    textContent: transformed.textContent,
-    publishedAt: new Date(frontmatter.date).toISOString(),
-  });
+  const existingRkey = existingPaths.get(postPath);
 
-  console.log(`Published: ${frontmatter.title}`);
-  console.log(`  → ${result.uri}`);
+  if (existingRkey) {
+    // Update existing document
+    await publisher.updateDocument(existingRkey, {
+      site: SITE_URL,
+      path: postPath,
+      title: frontmatter.title,
+      description: frontmatter.description,
+      content: {
+        $type: 'site.standard.content.markdown',
+        text: transformed.markdown,
+        version: '1.0',
+      },
+      textContent: transformed.textContent,
+      publishedAt: new Date(frontmatter.date).toISOString(),
+    });
+    console.log(`Updated: ${frontmatter.title}`);
+    console.log(`  → existing rkey: ${existingRkey}`);
+  } else {
+    // Publish new document
+    const result = await publisher.publishDocument({
+      site: SITE_URL,
+      path: postPath,
+      title: frontmatter.title,
+      description: frontmatter.description,
+      content: {
+        $type: 'site.standard.content.markdown',
+        text: transformed.markdown,
+        version: '1.0',
+      },
+      textContent: transformed.textContent,
+      publishedAt: new Date(frontmatter.date).toISOString(),
+    });
+    console.log(`Published: ${frontmatter.title}`);
+    console.log(`  → ${result.uri}`);
+  }
 }
