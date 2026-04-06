@@ -99,5 +99,5 @@ engaging and educational.
 [pipeline-us]: https://www.youtube.com/watch?v=oL7H1aCJcxg
 [code-like-sysadmin]: https://www.youtube.com/watch?v=ZjdqP-REoqc
 [remote-work-lisa]: https://www.youtube.com/watch?v=vB92Znb6GS4
-[wide-teams]: http://www.wideteams.com/2012/09/12/episode-49-wade-minter-and-andrew-berkowitz-of-teamsnap/
+[wide-teams]: https://www.wideteams.com/2012/09/12/episode-49-wade-minter-and-andrew-berkowitz-of-teamsnap/
 [cust-svc-sysadmins]: https://www.youtube.com/watch?v=OPSBNWLy9mA

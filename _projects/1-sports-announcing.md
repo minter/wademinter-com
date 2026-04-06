@@ -57,7 +57,7 @@ People have written some nice things about me:
 * [Superfan with a microphone](https://www.sportsengine.com/article/ice-hockey/superfan-microphone)
 * [From Carolina Hurricanes Fan To Announcer](https://magazine.wm.edu/online-exclusives/wade-minter.php)
 * [Minter: I want to be the loudest fan in the arena](https://www.wralsportsfan.com/hurricanes/audio/17901824/)
-* [For the Love of the Game](http://www.tribehockey.com/news/2020/4/13/wademinter)
+* [For the Love of the Game](https://www.tribehockey.com/news/2020/4/13/wademinter)
 * [Setting, Scoring, and Announcing Goals All in a Day’s Work For Minter](https://grepbeat.com/2018/11/13/setting-scoring-and-announcing-goals-all-in-a-days-work-for-minter/)
 * [VIDEO: Hurricanes PA man scores in alumni game, takes mic to announce his goal](https://www.thescore.com/nhl/news/959996)
 
