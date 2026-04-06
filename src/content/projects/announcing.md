@@ -119,6 +119,7 @@ I'm also the Public Address Announcer and DJ for the NC State Icepack, the club 
 
 I also volunteer my announcing skills for charity events in the Triangle area:
 
+* **[All In To Fight Cancer](https://allintofightcancer.org)** — Emcee for charity poker tournaments in Raleigh and Winston-Salem
 * **Carolina Sled Classic** — PA announcer for the Triangle Special Hockey Association's sled hockey tournament (2016-2019)
 * **Bank of America Bowl** — PA announcer for the Holt Brothers Foundation charity football game (2019-2020)
 * **Charity Football Game** — PA announcer for the Alzheimer's Association benefit (2015-2019)
