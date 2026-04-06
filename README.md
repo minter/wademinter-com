@@ -79,10 +79,10 @@ The post will automatically appear on the `/blog/` index page, sorted by date (n
 
 1. Create the markdown file with `title`, `date`, `description`, `featured_image`
 2. Push to main — site builds, deploys, and syncs the post to ATProto automatically
-3. Share on Bluesky, then get the AT-URI of your Bluesky post
-4. Add `bskyPostUri` to the frontmatter (enables federated comments)
-5. Get the document rkey from the deploy logs or `pdsls.dev`, add `atprotoRkey` (enables per-document verification)
-6. Push again — comments and verification are now live
+3. Share the post on Bluesky
+4. Get the `bskyPostUri`: click `...` on your Bluesky post > "Copy post link" — the URL will look like `https://bsky.app/profile/wademinter.com/post/abc123def`. Convert to AT-URI format: `at://did:plc:c7vyv3rfip6mejhnzairvkd3/app.bsky.feed.post/abc123def`
+5. Get the `atprotoRkey`: check the deploy workflow's "Sync posts to ATProto" step logs for the `→` output line, or look up your documents at [pdsls.dev/at://did:plc:c7vyv3rfip6mejhnzairvkd3/site.standard.document](https://pdsls.dev/at://did:plc:c7vyv3rfip6mejhnzairvkd3/site.standard.document) — the rkey is the last segment of the AT-URI
+6. Add both values to the post's frontmatter and push again — comments and verification are now live
 
 ### Project Pages
 
