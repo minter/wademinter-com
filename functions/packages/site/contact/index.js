@@ -19,6 +19,32 @@ async function main(args) {
     return redirect(REDIRECT_URL);
   }
 
+  // Turnstile verification
+  const turnstileToken = args["cf-turnstile-response"];
+  if (turnstileToken) {
+    const turnstileSecret =
+      process.env.TURNSTILE_SECRET_KEY || args.TURNSTILE_SECRET_KEY;
+    const verifyRes = await fetch(
+      "https://challenges.cloudflare.com/turnstile/v0/siteverify",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: `secret=${encodeURIComponent(turnstileSecret)}&response=${encodeURIComponent(turnstileToken)}`,
+      }
+    );
+    const result = await verifyRes.json();
+    if (!result.success) {
+      return {
+        statusCode: 403,
+        headers: { "content-type": "text/html" },
+        body: "<html><body><h1>Verification failed</h1><p>Please go back and try again.</p><p><a href='https://wademinter.com/contact'>Go back</a></p></body></html>",
+      };
+    }
+  } else {
+    // No Turnstile token — likely a bot posting directly
+    return redirect(REDIRECT_URL);
+  }
+
   const { name, email, message } = args;
 
   // Basic validation

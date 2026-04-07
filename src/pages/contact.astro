@@ -30,6 +30,8 @@ import PageLayout from '../layouts/PageLayout.astro'
 
       <input type="text" name="_gotcha" style="display: none;" />
 
+      <div class="cf-turnstile" data-sitekey="0x4AAAAAAC10ZE1shD-ft_Eh"></div>
+
       <div>
         <button type="submit"
           class="px-8 py-3 bg-[var(--color-accent)] text-white font-semibold rounded-md hover:opacity-90 transition-opacity cursor-pointer">
@@ -37,6 +39,7 @@ import PageLayout from '../layouts/PageLayout.astro'
         </button>
       </div>
     </form>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
   </div>
 
   <p>I generally reply to emails in a day or two. You can also email me directly at <code>wade AT wademinter DOT com</code>.</p>

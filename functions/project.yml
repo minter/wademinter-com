@@ -2,6 +2,7 @@ packages:
   - name: site
     environment:
       MAILGUN_API_KEY: "${MAILGUN_API_KEY}"
+      TURNSTILE_SECRET_KEY: "${TURNSTILE_SECRET_KEY}"
     functions:
       - name: contact
         runtime: nodejs:22
