@@ -3,6 +3,7 @@ packages:
     environment:
       MAILGUN_API_KEY: "${MAILGUN_API_KEY}"
       TURNSTILE_SECRET_KEY: "${TURNSTILE_SECRET_KEY}"
+      TURNSTILE_SECRET_KEY_WATCHPARTY: "${TURNSTILE_SECRET_KEY_WATCHPARTY}"
     functions:
       - name: contact
         runtime: nodejs:22
