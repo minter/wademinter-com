@@ -21,6 +21,12 @@ If you'd like me to speak at or emcee your event, [get in touch](/contact).
 
 ## Featured Talks
 
+### Iced Tea with Meghan Lamontagne (Podcast)
+
+A conversation with Meghan Lamontagne about life as the PA announcer for the Carolina Hurricanes — from my first game as a season ticket member to becoming a staple of the Canes game-day experience. We talk hockey, the behind-the-scenes of production and entertainment at Lenovo Center, and how I keep my voice game-ready for 41+ nights a year.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VXmX1zCinVg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### Building Weird Things With The National Hockey League Using Ruby!
 
 What happens when an NHL PA announcer who writes Ruby decides to automate his car, build game bots, and generally mash up hockey APIs with everything?
@@ -65,6 +71,7 @@ I've also emceed the Innovate Raleigh Summit, Innovate Raleigh Candidates Forum,
 
 ## Full Speaking History
 
+* [Iced Tea with Meghan Lamontagne](https://youtu.be/VXmX1zCinVg) — Podcast
 * North Carolina Chef Showdown — NC Restaurant and Lodging Association
 * [You (Yes, You) Need to Support Junior Developers](https://youtu.be/Rba-ypJwx2A?t=12522) — Space Apps NYC Symposium
 * [Building Weird Things With The NHL Using Ruby!](https://www.youtube.com/watch?v=5FoxERw7F2Y) — !!Con
