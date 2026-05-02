@@ -69,9 +69,25 @@ I've also emceed the Innovate Raleigh Summit, Innovate Raleigh Candidates Forum,
 
 ---
 
+## Radio & Media
+
+I'm an occasional guest on a couple of radio programs:
+
+* **Mix Mornings with Kyle, Brian, and Sarah** — Mix 101.5, Raleigh, NC
+* **Pirate Radio with Clip Brock** — Greenville, NC
+
+---
+
 ## Full Speaking History
 
 * [Iced Tea with Meghan Lamontagne](https://youtu.be/VXmX1zCinVg) — Podcast
+* [Locked On Hurricanes](https://www.youtube.com/watch?v=1GXANg78ZL0) — Podcast
+* Emcee — Keep North Carolina Beautiful Golf Tournament and Fundraiser (Greensboro, NC)
+* [The Caniac Report](https://bleav.com/shows/the-caniac-report/episodes/episode-146-catching-up-with-hurricanes-pa-announcer-wade-minter/) — Podcast
+* [NC Sports Talk](https://www.iheart.com/podcast/269-wnct-9oys-sports-talk-72502259/episode/getting-pumped-for-hurricanes-hockey-with-wade-minter-122789090) — WNCT Podcast
+* [Locked On Hurricanes](https://www.wcnc.com/video/sports/locked-on/lo-charlotte/hurricanes-show/interview-with-carolina-hurricanes-pa-announcer-wade-minter-locked-on-hurricanes/275-aaf63099-8d98-4c16-a327-666fac095079) — Podcast
+* [Slap Shot Radio](https://podcasts.apple.com/us/podcast/h-wade-minter-3-10-2021/id1290612443?i=1000512560753) — Podcast
+* [Trivia Escape Pod](https://podbay.fm/p/trivia-escape-pod/e/1566302400) — Podcast
 * North Carolina Chef Showdown — NC Restaurant and Lodging Association
 * [You (Yes, You) Need to Support Junior Developers](https://youtu.be/Rba-ypJwx2A?t=12522) — Space Apps NYC Symposium
 * [Building Weird Things With The NHL Using Ruby!](https://www.youtube.com/watch?v=5FoxERw7F2Y) — !!Con
