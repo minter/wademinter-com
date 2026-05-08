@@ -391,7 +391,7 @@ ${tracks.map((track, index) => formatTrack(track, index, notes[index])).join('\n
 function formatTrack(track, index, note) {
   const artwork = track.artworkUrl
     ? `<img class="playlist-song-artwork" src="${htmlEscape(track.artworkUrl)}" alt="${htmlEscape(track.album ? `Album cover for ${track.album}` : `Album artwork for ${track.name}`)}" width="72" height="72">`
-    : '';
+    : '<span class="playlist-song-artwork playlist-song-artwork-placeholder" aria-hidden="true"></span>';
   const title = htmlEscape(formatTrackTitle(track));
   const description = htmlEscape(note || fallbackTrackNote(track));
 
