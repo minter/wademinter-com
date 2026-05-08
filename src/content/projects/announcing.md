@@ -45,6 +45,15 @@ If you were to pick one person from Kenbridge, Virginia, who would make SportsCe
 * [Setting, Scoring, and Announcing Goals All in a Day's Work For Minter](https://grepbeat.com/2018/11/13/setting-scoring-and-announcing-goals-all-in-a-days-work-for-minter/) — GrepBeat
 * [VIDEO: Hurricanes PA man scores in alumni game, takes mic to announce his goal](https://www.thescore.com/nhl/news/959996) — theScore
 
+### Podcast and Media Appearances
+
+* [Iced Tea with Meghan Lamontagne](https://youtu.be/VXmX1zCinVg) — Podcast
+* [Locked On Hurricanes](https://www.youtube.com/watch?v=1GXANg78ZL0) — Podcast
+* [The Caniac Report](https://bleav.com/shows/the-caniac-report/episodes/episode-146-catching-up-with-hurricanes-pa-announcer-wade-minter/) — Podcast
+* [NC Sports Talk](https://www.iheart.com/podcast/269-wnct-9oys-sports-talk-72502259/episode/getting-pumped-for-hurricanes-hockey-with-wade-minter-122789090) — WNCT Podcast
+* [Locked On Hurricanes](https://www.wcnc.com/video/sports/locked-on/lo-charlotte/hurricanes-show/interview-with-carolina-hurricanes-pa-announcer-wade-minter-locked-on-hurricanes/275-aaf63099-8d98-4c16-a327-666fac095079) — Podcast
+* [Slap Shot Radio](https://podcasts.apple.com/us/podcast/h-wade-minter-3-10-2021/id1290612443?i=1000512560753) — Podcast
+
 ---
 
 ### Photos and Memories
