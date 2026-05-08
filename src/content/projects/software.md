@@ -35,9 +35,11 @@ in various forms — from the original Perl/Tk version to today's Electron app.
 
 ---
 
-## Watch Party Games
+## [Watch Party Games](https://watchparty.app)
 
 ### Interactive games for NHL watch party events
+
+**Site**: [watchparty.app](https://watchparty.app)
 
 A dual-window Electron application built for running interactive fan games
 at Carolina Hurricanes watch parties. Staff operate the Control window
@@ -95,6 +97,8 @@ account cleanup, and feed metadata updates via the ATProto API.
 
 ### Get alerted when your team's lineup changes
 
+**Site**: [rosterflash.com](https://rosterflash.com/)
+
 A companion app to [TeamSnap](https://teamsnap.com/) that sends you an
 alert when a teammate changes their availability close to game time.
 Know immediately if you need to adjust your lineup plans. Uses TeamSnap's
@@ -109,6 +113,8 @@ Built with Ruby on Rails, Sidekiq, and Redis.
 ## [Suggestion Ox](https://suggestionox.com/)
 
 ### Anonymous feedback for organizations
+
+**Site**: [suggestionox.com](https://suggestionox.com/)
 
 The online suggestion box that makes it easy to find out what you're not
 hearing before small problems become big problems. Trusted by over 50,000
