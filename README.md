@@ -105,7 +105,7 @@ Export the playlist from Music.app:
 Then run:
 
 ```sh
-npm run playlist:post -- "For The Girls - March 2026.txt"
+bin/playlist-post "For The Girls - March 2026.txt"
 ```
 
 The generator:
@@ -121,12 +121,12 @@ The generator:
 Useful options:
 
 ```sh
-npm run playlist:post -- "For The Girls - March 2026.txt" --dry-run
-npm run playlist:post -- "For The Girls - March 2026.txt" --force
-npm run playlist:post -- "For The Girls - March 2026.txt" --no-ai
-npm run playlist:post -- "For The Girls - March 2026.txt" --no-music-cover
-npm run playlist:post -- "For The Girls - March 2026.txt" --no-song-artwork
-npm run playlist:post -- "For The Girls - March 2026.txt" --cover-image ~/Desktop/manual-cover.jpg
+bin/playlist-post "For The Girls - March 2026.txt" --dry-run
+bin/playlist-post "For The Girls - March 2026.txt" --force
+bin/playlist-post "For The Girls - March 2026.txt" --no-ai
+bin/playlist-post "For The Girls - March 2026.txt" --no-music-cover
+bin/playlist-post "For The Girls - March 2026.txt" --no-song-artwork
+bin/playlist-post "For The Girls - March 2026.txt" --cover-image ~/Desktop/manual-cover.jpg
 ```
 
 Required local environment:

@@ -32,7 +32,7 @@ const coverImage = optionValue('--cover-image');
 const inputPath = positionalArgs()[0];
 
 if (!inputPath) {
-  console.error('Usage: npm run playlist:post -- <playlist-export.txt> [--dry-run] [--force] [--no-ai] [--no-music-cover] [--no-song-artwork] [--model <model>] [--cover-image <image>]');
+  console.error('Usage: bin/playlist-post <playlist-export.txt> [--dry-run] [--force] [--no-ai] [--no-music-cover] [--no-song-artwork] [--model <model>] [--cover-image <image>]');
   process.exit(1);
 }
 
