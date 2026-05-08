@@ -1,6 +1,6 @@
 ---
 title: 'For the Girls: April 2026'
-date: 2026-04-15
+date: 2026-04-15T12:00:00-05:00
 description: A monthly playlist for the girls, covering April 2026.
 featured_image: '/images/blog/playlists/2026-04-15-for-the-girls-april-2026.jpg'
 ---

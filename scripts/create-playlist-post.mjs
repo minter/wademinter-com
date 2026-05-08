@@ -146,17 +146,18 @@ function parsePlaylistFilename(path) {
 
   const year = Number(rawYear);
   const date = new Date(Date.UTC(year, monthIndex, 15));
+  const displayDate = date.toISOString().slice(0, 10);
   const month = titleCase(rawMonth);
   const playlistName = titleCase(rawName);
   const sourceName = `${rawName.trim()} - ${month} ${year}`;
-  const slug = `${date.toISOString().slice(0, 10)}-${slugify(`${rawName}-${month}-${year}`)}`;
+  const slug = `${displayDate}-${slugify(`${rawName}-${month}-${year}`)}`;
 
   return {
     playlistName,
     sourceName,
     month,
     year,
-    date: date.toISOString().slice(0, 10),
+    date: `${displayDate}T12:00:00-05:00`,
     slug,
     title: `${playlistName}: ${month} ${year}`,
   };

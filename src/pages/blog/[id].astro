@@ -20,6 +20,14 @@ const DID = 'did:plc:c7vyv3rfip6mejhnzairvkd3'
 const headExtra = post.data.atprotoRkey
   ? generateDocumentLinkTag({ did: DID, documentRkey: post.data.atprotoRkey })
   : undefined
+
+const formatPostDate = (date: Date) =>
+  date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    timeZone: 'America/New_York',
+  })
 ---
 
 <BaseLayout title={post.data.title} description={post.data.description} featuredImage={post.data.featured_image} ogType="article" headExtra={headExtra}>
@@ -28,7 +36,7 @@ const headExtra = post.data.atprotoRkey
   )}
   <article class="max-w-3xl mx-auto px-6 py-12 prose">
     <time class="text-sm text-[var(--color-text-light)] block mb-6">
-      {post.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+      {formatPostDate(post.data.date)}
     </time>
     <Content />
   </article>
