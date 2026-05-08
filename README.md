@@ -92,6 +92,63 @@ The post will automatically appear on the `/blog/` index page, sorted by date (n
    Or check the deploy workflow's "Sync posts to ATProto" step logs — the rkey is printed after each sync.
 6. Add both values to the post's frontmatter and push again — comments and verification are now live
 
+### Playlist Blog Posts
+
+Monthly "For the Girls" playlist posts can be generated from Apple Music playlist exports.
+
+Export the playlist from Music.app:
+
+1. Select the playlist in Music.
+2. Choose **File > Library > Export Playlist...**.
+3. Save it as a text file named like `For The Girls - March 2026.txt`.
+
+Then run:
+
+```sh
+npm run playlist:post -- "For The Girls - March 2026.txt"
+```
+
+The generator:
+
+- parses the UTF-16 Apple Music text export
+- dates the post on the 15th of the playlist month
+- creates `src/content/blog/YYYY-MM-15-for-the-girls-month-yyyy.md`
+- pulls the playlist cover image from Apple Music and saves a compressed JPEG under `public/images/blog/playlists/`
+- enriches each track with Apple Music album-art thumbnails
+- uses OpenAI to generate concise factual song notes
+- renders the track list as stable HTML so artwork, numbers, and notes stay aligned
+
+Useful options:
+
+```sh
+npm run playlist:post -- "For The Girls - March 2026.txt" --dry-run
+npm run playlist:post -- "For The Girls - March 2026.txt" --force
+npm run playlist:post -- "For The Girls - March 2026.txt" --no-ai
+npm run playlist:post -- "For The Girls - March 2026.txt" --no-music-cover
+npm run playlist:post -- "For The Girls - March 2026.txt" --no-song-artwork
+npm run playlist:post -- "For The Girls - March 2026.txt" --cover-image ~/Desktop/manual-cover.jpg
+```
+
+Required local environment:
+
+```sh
+OPENAI_API_KEY="..."
+APPLE_TEAM_ID="..."
+APPLE_MUSIC_KEY_ID="..."
+APPLE_MUSIC_PRIVATE_KEY_PATH="$HOME/.keys/apple/AuthKey_XXXXXXXXXX.p8"
+APPLE_MUSIC_STOREFRONT="us"
+APPLE_MUSIC_USER_TOKEN="..."
+```
+
+Apple Music helper commands:
+
+```sh
+npm run apple-music:test        # verify developer token, catalog search, and library access
+npm run apple-music:user-token  # local MusicKit page to obtain APPLE_MUSIC_USER_TOKEN
+```
+
+The source export files are temporary inputs and do not need to be committed.
+
 ### Project Pages
 
 Project pages require two files:

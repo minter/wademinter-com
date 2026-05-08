@@ -8,6 +8,9 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "apple-music:test": "node scripts/test-apple-music.mjs",
+    "apple-music:user-token": "node scripts/apple-music-user-token.mjs",
+    "playlist:post": "node scripts/create-playlist-post.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },

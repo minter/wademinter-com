@@ -152,6 +152,56 @@ body {
   margin: 1rem 0;
 }
 
+.prose .playlist-songs {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.prose .playlist-song {
+  display: grid;
+  grid-template-columns: 2.25rem 72px minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+  margin: 0;
+}
+
+.prose .playlist-song-artwork {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  margin: 0.2rem 0 0;
+}
+
+.prose .playlist-song-number {
+  color: var(--color-text-medium);
+  font-size: 1.25rem;
+  line-height: 1.35;
+  margin-top: 0.2rem;
+}
+
+.prose .playlist-song-copy strong {
+  display: block;
+  font-size: 1.25rem;
+  line-height: 1.35;
+}
+
+.prose .playlist-song-copy p {
+  margin: 0.25rem 0 0;
+}
+
+@media (max-width: 520px) {
+  .prose .playlist-song {
+    grid-template-columns: 1.75rem 56px minmax(0, 1fr);
+    gap: 0.75rem;
+  }
+
+  .prose .playlist-song-artwork {
+    width: 56px;
+    height: 56px;
+  }
+}
+
 .prose iframe {
   max-width: 100%;
   margin: 1rem 0;
