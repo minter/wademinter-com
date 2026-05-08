@@ -2,9 +2,15 @@
 import BaseLayout from '../../layouts/BaseLayout.astro'
 import { getCollection } from 'astro:content'
 
-const posts = (await getCollection('blog')).sort(
-  (a, b) => b.data.date.getTime() - a.data.date.getTime()
-)
+export async function getStaticPaths({ paginate }) {
+  const posts = (await getCollection('blog')).sort(
+    (a, b) => b.data.date.getTime() - a.data.date.getTime()
+  )
+
+  return paginate(posts, { pageSize: 12 })
+}
+
+const { page } = Astro.props
 
 const formatPostDate = (date: Date) =>
   date.toLocaleDateString('en-US', {
@@ -27,12 +33,12 @@ const formatPostDate = (date: Date) =>
       </a>
     </div>
 
-    {posts.length === 0 && (
+    {page.data.length === 0 && (
       <p class="text-[var(--color-text-medium)]">No posts yet. Check back soon!</p>
     )}
 
     <div class="space-y-8">
-      {posts.map(post => (
+      {page.data.map(post => (
         <article class="group">
           <a href={`/blog/${post.id}`} class="block">
             {post.data.featured_image && (
@@ -55,5 +61,27 @@ const formatPostDate = (date: Date) =>
         </article>
       ))}
     </div>
+
+    {page.lastPage > 1 && (
+      <nav class="flex items-center justify-between border-t border-gray-200 dark:border-gray-800 mt-12 pt-8" aria-label="Blog pagination">
+        <div>
+          {page.url.prev && (
+            <a href={page.url.prev} class="text-[var(--color-text-medium)] hover:text-[var(--color-accent)] transition-colors">
+              Newer Posts
+            </a>
+          )}
+        </div>
+        <p class="text-sm text-[var(--color-text-light)]">
+          Page {page.currentPage} of {page.lastPage}
+        </p>
+        <div>
+          {page.url.next && (
+            <a href={page.url.next} class="text-[var(--color-text-medium)] hover:text-[var(--color-accent)] transition-colors">
+              Older Posts
+            </a>
+          )}
+        </div>
+      </nav>
+    )}
   </section>
 </BaseLayout>

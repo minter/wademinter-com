@@ -6,14 +6,21 @@ import { generateDocumentLinkTag } from '@bryanguffey/astro-standard-site'
 import { getCollection, render } from 'astro:content'
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog')
-  return posts.map(post => ({
+  const posts = (await getCollection('blog')).sort(
+    (a, b) => b.data.date.getTime() - a.data.date.getTime()
+  )
+
+  return posts.map((post, index) => ({
     params: { id: post.id },
-    props: { post },
+    props: {
+      post,
+      newerPost: posts[index - 1],
+      olderPost: posts[index + 1],
+    },
   }))
 }
 
-const { post } = Astro.props
+const { post, newerPost, olderPost } = Astro.props
 const { Content } = await render(post)
 
 const DID = 'did:plc:c7vyv3rfip6mejhnzairvkd3'
@@ -40,6 +47,27 @@ const formatPostDate = (date: Date) =>
     </time>
     <Content />
   </article>
+
+  {(newerPost || olderPost) && (
+    <nav class="max-w-3xl mx-auto px-6 pb-12 grid gap-4 sm:grid-cols-2" aria-label="Blog post navigation">
+      <div>
+        {newerPost && (
+          <a href={`/blog/${newerPost.id}`} class="block h-full border border-gray-200 dark:border-gray-800 rounded-lg p-4 hover:border-[var(--color-accent)] transition-colors">
+            <span class="text-sm text-[var(--color-text-light)]">Newer Post</span>
+            <span class="block font-semibold text-[var(--color-text-dark)] dark:text-white mt-1">{newerPost.data.title}</span>
+          </a>
+        )}
+      </div>
+      <div>
+        {olderPost && (
+          <a href={`/blog/${olderPost.id}`} class="block h-full border border-gray-200 dark:border-gray-800 rounded-lg p-4 hover:border-[var(--color-accent)] transition-colors sm:text-right">
+            <span class="text-sm text-[var(--color-text-light)]">Older Post</span>
+            <span class="block font-semibold text-[var(--color-text-dark)] dark:text-white mt-1">{olderPost.data.title}</span>
+          </a>
+        )}
+      </div>
+    </nav>
+  )}
 
   {post.data.bskyPostUri && (
     <section class="max-w-3xl mx-auto px-6 pb-12">

@@ -224,7 +224,10 @@ async function buildAiMarkdown(playlistInfo, tracks, featuredImage) {
         'Use the provided track order exactly.',
         'The intro must be exactly one factual sentence in this form: "This is the MONTH YEAR playlist for the girls."',
         'Write one concise factual note for each track.',
-        'Good factual context can include release era, album, genre, songwriter, notable sound, chart/cultural context, or what kind of song it is.',
+        'The rendered track heading already includes the song title, artist, album, and year when available.',
+        'Do not repeat the song title, artist, album title, or year in track notes.',
+        'Write each note as supporting copy under that heading, not as a standalone sentence that re-identifies the track.',
+        'Good factual context can include genre, songwriter, notable sound, chart/cultural context, or what kind of song it is.',
         'Avoid total track count, most-played notes, play counts, skip counts, and listening-history analysis.',
       ].join('\n'),
       input: JSON.stringify({
@@ -389,7 +392,7 @@ function formatTrack(track, index, note) {
   const artwork = track.artworkUrl
     ? `<img class="playlist-song-artwork" src="${htmlEscape(track.artworkUrl)}" alt="${htmlEscape(track.album ? `Album cover for ${track.album}` : `Album artwork for ${track.name}`)}" width="72" height="72">`
     : '';
-  const title = htmlEscape(`"${track.name}" - ${track.artist}`);
+  const title = htmlEscape(formatTrackTitle(track));
   const description = htmlEscape(note || fallbackTrackNote(track));
 
   return `  <article class="playlist-song">
@@ -402,12 +405,21 @@ function formatTrack(track, index, note) {
   </article>`;
 }
 
+function formatTrackTitle(track) {
+  const albumAndYear = [track.album, track.year]
+    .filter(Boolean)
+    .join(', ');
+  const metadata = albumAndYear ? ` (${albumAndYear})` : '';
+
+  return `"${track.name}" - ${track.artist}${metadata}`;
+}
+
 function fallbackTrackNote(track) {
-  const details = [track.album, track.year, track.genre]
+  const details = [track.genre]
     .filter(Boolean)
     .join(', ');
 
-  return `${details}.`;
+  return details ? `${details}.` : '';
 }
 
 function formatDuration(totalSeconds) {

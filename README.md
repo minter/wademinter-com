@@ -129,6 +129,15 @@ bin/playlist-post "For The Girls - March 2026.txt" --no-song-artwork
 bin/playlist-post "For The Girls - March 2026.txt" --cover-image ~/Desktop/manual-cover.jpg
 ```
 
+To reprocess a folder of Apple Music exports and overwrite the generated posts:
+
+```sh
+for file in ~/Desktop/FTG/*.txt; do
+  echo "Processing $file"
+  bin/playlist-post "$file" --force
+done
+```
+
 Required local environment:
 
 ```sh
