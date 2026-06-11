@@ -35,6 +35,7 @@ If you were to pick one person from Kenbridge, Virginia, who would make SportsCe
 
 ### In The Press
 
+* [The voice of the Canes pulls back the curtain. Why he's never missed a home game](https://www.newsobserver.com/sports/nhl/carolina-hurricanes/article315999652.html?giftCode=8583358db0d179e55b1b9c15621e75a8b26a052ab23beb5b4d7afc56edfb8228) — Raleigh News & Observer
 * [Hurricanes' PA Announcer Wade Minter adapting, engaging with fans in unusual season](https://www.canescountry.com/2021/3/4/22312860/carorlina-hurricanes-wade-minter-minter-mail-pa-announcer) — Canes Country
 * [Media Musings: Carolina Hurricanes GOOOOOAAAALS will be different this year. But it's still the same Minter](https://www.sportschannel8.com/media-musings-carolina-hurricanes-goooooaaaals-will-be-different-this-year-but-its-still-the-same-minter/) — Sports Channel 8
 * [From the Stands to the Scorer's Table, Hurricanes PA Announcer Wade Minter is Living the Dream](https://www.canescountry.com/2017/1/30/14315014/carolina-hurricanes-public-address-announcer-wade-minter-sportscenter-goal-call) — Canes Country
