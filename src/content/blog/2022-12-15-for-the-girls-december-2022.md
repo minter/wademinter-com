@@ -22,7 +22,7 @@ This is the December 2022 playlist for the girls.
     <span class="playlist-song-number">2.</span>
     <img class="playlist-song-artwork" src="https://is1-ssl.mzstatic.com/image/thumb/Music/y2005/m05/d13/h17/s06.rzyhntiv.jpg/160x160bb.jpg" alt="Album cover for Introduce Yourself" width="72" height="72">
     <div class="playlist-song-copy">
-      <strong>&quot;We Care a Lot&quot; - Faith No More (Introduce Yourself, 1900)</strong>
+      <strong>&quot;We Care a Lot&quot; - Faith No More (Introduce Yourself, 1987)</strong>
       <p>A driving punk-funk anthem built around a blunt, communal chorus.</p>
     </div>
   </article>
