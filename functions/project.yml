@@ -6,8 +6,8 @@ packages:
       TURNSTILE_SECRET_KEY_WATCHPARTY: "${TURNSTILE_SECRET_KEY_WATCHPARTY}"
     functions:
       - name: contact
-        runtime: nodejs:22
+        runtime: nodejs:24
         web: true
       - name: watchparty-contact
-        runtime: nodejs:22
+        runtime: nodejs:24
         web: true
