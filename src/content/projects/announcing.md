@@ -11,7 +11,7 @@ sort_order: 1
 
 ![Wade Minter scores at a Hurricanes alumni game](/images/site/wade-scores.jpg)
 
-## The Voice of PNC Arena
+## The Voice of Lenovo Center
 
 Since 2015, I've been the Public Address Announcer for the NHL's Carolina Hurricanes — 2026 Stanley Cup champions. Hundreds of games on the mic — announcing starting lineups, goals, assists, and penalties. But I'm not just reading names off a sheet. I'm there to make the fan experience of attending a Hurricanes game as good as it can be.
 
