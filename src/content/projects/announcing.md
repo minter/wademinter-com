@@ -1,8 +1,8 @@
 ---
 title: 'Sports Announcing'
-subtitle: 'The voice of the Carolina Hurricanes and NC State Icepack'
+subtitle: 'The voice of the 2026 Stanley Cup champion Carolina Hurricanes and NC State Icepack'
 date: 2020-12-18
-description: I am the arena public address announcer for the NHL's Carolina Hurricanes and the NC State Icepack.
+description: I am the arena public address announcer for the NHL's 2026 Stanley Cup champion Carolina Hurricanes and the NC State Icepack.
 featured_image: '/images/site/wade-canes-mic.jpg'
 image_position: top
 permalink: '/announcing'
@@ -13,7 +13,7 @@ sort_order: 1
 
 ## The Voice of PNC Arena
 
-Since 2015, I've been the Public Address Announcer for the NHL's Carolina Hurricanes. Hundreds of games on the mic — announcing starting lineups, goals, assists, and penalties. But I'm not just reading names off a sheet. I'm there to make the fan experience of attending a Hurricanes game as good as it can be.
+Since 2015, I've been the Public Address Announcer for the NHL's Carolina Hurricanes — 2026 Stanley Cup champions. Hundreds of games on the mic — announcing starting lineups, goals, assists, and penalties. But I'm not just reading names off a sheet. I'm there to make the fan experience of attending a Hurricanes game as good as it can be.
 
 > "The way the Hurricanes P.A. announcer says Sebastian Aho's last name, with the crowd joining in, is one of the five coolest random things in the NHL." --Corey Masisak
 

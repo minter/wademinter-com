@@ -121,6 +121,8 @@ hearing before small problems become big problems. Trusted by over 50,000
 companies, associations, and government agencies including Samsung,
 Hilton, and the US Air Force.
 
-I'm the founder and CTO. Built with Ruby on Rails, Node.js, Sidekiq, Puma, AWS (EC2, RDS, ElastiCache, DynamoDB), Terraform, Ansible, and Mailgun.
+I'm the founder and COO. Built with Ruby on Rails, Node.js, Sidekiq, Puma, AWS (EC2, RDS, ElastiCache, DynamoDB), Terraform, Ansible, and Mailgun.
+
+**In the press**: [Suggestion Ox Provides Employees Tools To Provide Feedback Anonymously](https://grepbeat.com/2023/08/08/suggestion-ox-provides-employees-tools-to-provide-feedback-anonymously/) — GrepBeat
 
 ![Suggestion Ox web application](/images/site/software/suggestion-ox-screenshot.png)

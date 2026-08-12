@@ -13,7 +13,7 @@ sort_order: 2
 
 ## The Short Version
 
-I am likely the only technology executive you know who is also a National Hockey League Public Address Announcer, improv comedian, pro wrestling ring announcer, and ice hockey goalie.
+I am likely the only technology executive you know who is also the Public Address Announcer for the 2026 Stanley Cup champion Carolina Hurricanes, an improv comedian, pro wrestling ring announcer, and ice hockey goalie.
 
 I've spent 25+ years building and leading engineering teams — from a four-person side project that became an industry leader to globally distributed teams shipping enterprise software. I care about hiring well, building collaborative cultures, mentoring developers, and shipping products that make customers happy.
 
@@ -23,7 +23,7 @@ For the full list, visit [my LinkedIn](https://linkedin.com/in/minter). Here are
 
 ## Now
 
-### Founder and CTO - [Suggestion Ox](https://suggestionox.com/)
+### Founder and COO - [Suggestion Ox](https://suggestionox.com/)
 
 #### 2015 - Present
 
