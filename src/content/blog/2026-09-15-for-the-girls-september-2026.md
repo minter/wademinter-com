@@ -54,7 +54,7 @@ This is the September 2026 playlist for the girls.
     <span class="playlist-song-number">6.</span>
     <img class="playlist-song-artwork" src="https://is1-ssl.mzstatic.com/image/thumb/Music/v4/f2/e9/69/f2e9692f-a8bf-acb0-d6c1-3bfc6f010c29/859710940515_cover.tif/160x160bb.jpg" alt="Album artwork for Zoot Suit Riot" width="72" height="72">
     <div class="playlist-song-copy">
-      <strong>&quot;Zoot Suit Riot&quot; - Cherry Poppin' Daddies</strong>
+      <strong>&quot;Zoot Suit Riot&quot; - Cherry Poppin' Daddies (1997)</strong>
       <p>A swing-revival favorite with a punchy horn-driven groove and a big party feel.</p>
     </div>
   </article>
