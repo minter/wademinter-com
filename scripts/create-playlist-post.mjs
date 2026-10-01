@@ -27,7 +27,7 @@ const force = args.includes('--force');
 const noAi = args.includes('--no-ai');
 const noMusicCover = args.includes('--no-music-cover');
 const noSongArtwork = args.includes('--no-song-artwork');
-const model = optionValue('--model') || process.env.OPENAI_MODEL || 'gpt-5.4-mini';
+const model = optionValue('--model') || process.env.OPENAI_MODEL || 'gpt-6.1-sol';
 const coverImage = optionValue('--cover-image');
 const inputPath = positionalArgs()[0];
 
@@ -228,6 +228,11 @@ async function buildAiMarkdown(playlistInfo, tracks, featuredImage) {
         'Do not repeat the song title, artist, album title, or year in track notes.',
         'Write each note as supporting copy under that heading, not as a standalone sentence that re-identifies the track.',
         'Good factual context can include genre, songwriter, notable sound, chart/cultural context, or what kind of song it is.',
+        'For tracks you know well, prefer specific facts: songwriters, guest performers, covers, samples, and cultural context.',
+        'Apply caution per claim, not per track: state every fact you are confident in and leave out only the ones you are unsure of.',
+        'When you know the artist but not the specific track or album, such as a release newer than your knowledge, write a factual note about the artist instead: who is in the group, where they are from, or what they are known for.',
+        'Never guess who is behind a name, alias, or collaborator you do not recognize, and never guess at the backstory of a track you do not know.',
+        'Every note must say something concrete about the song or artist. Do not write filler such as "a selection", and do not comment on a track\'s position in the playlist or its neighbors.',
         'Avoid total track count, most-played notes, play counts, skip counts, and listening-history analysis.',
       ].join('\n'),
       input: JSON.stringify({
