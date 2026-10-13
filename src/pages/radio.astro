@@ -1,0 +1,261 @@
+---
+import ProjectLayout from '../layouts/ProjectLayout.astro'
+import { getCollection, render } from 'astro:content'
+import stations from '../data/dx-log.json'
+
+const projects = await getCollection('projects')
+const project = projects.find(p => p.data.permalink === '/radio')!
+const { Content } = await render(project)
+
+const log = [...stations].sort((a, b) => a.frequency_khz - b.frequency_khz)
+const regions = new Set(log.map(s => s.city.split(', ')[1]))
+const maxMiles = Math.max(...log.map(s => s.miles))
+const farthest = [...new Set(log.filter(s => s.miles === maxMiles).map(s => s.city))].join(' & ')
+const over500 = log.filter(s => s.miles >= 500).length
+
+const stats = [
+  { value: log.length, label: 'stations logged' },
+  { value: regions.size, label: 'states, provinces & DC' },
+  { value: `${maxMiles} mi`, label: `farthest (${farthest})` },
+  { value: over500, label: 'stations 500+ miles away' },
+]
+
+const formatFrequency = (s: (typeof log)[number]) =>
+  s.band === 'SW' ? `${(s.frequency_khz / 1000).toFixed(2)} MHz` : `${s.frequency_khz} kHz`
+
+const formatDate = (iso: string) =>
+  new Date(`${iso}T12:00:00`).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
+---
+
+<ProjectLayout {...project.data}>
+  <Content />
+
+  <div class="dx-stats">
+    {stats.map(stat => (
+      <div class="dx-stat">
+        <span class="dx-stat-value">{stat.value}</span>
+        <span class="dx-stat-label">{stat.label}</span>
+      </div>
+    ))}
+  </div>
+
+  <ol class="dx-log" aria-label="Stations heard on the Philco">
+    <li class="dx-head" aria-hidden="true">
+      <span>Freq.</span>
+      <span>Station</span>
+      <span>Location</span>
+      <span>Format &amp; power</span>
+      <span>First heard</span>
+    </li>
+    {log.map(s => (
+      <li class="dx-row">
+        <span class="dx-freq">
+          {formatFrequency(s)}
+          {s.band === 'SW' && <span class="dx-badge">SW</span>}
+        </span>
+        <span class="dx-station">
+          <a href={s.wikipedia} class="dx-call">{s.call_sign}</a>
+          <span class="dx-name">{s.name}</span>
+          <span class="dx-how">{s.identified_by}</span>
+        </span>
+        <span class="dx-location">
+          {s.city}
+          <span class="dx-sub">{s.miles} mi</span>
+        </span>
+        <span class="dx-format">
+          {s.format}
+          <span class="dx-sub">{s.power}</span>
+        </span>
+        <span class="dx-date">{formatDate(s.first_heard)}</span>
+      </li>
+    ))}
+  </ol>
+
+  <p class="dx-footnote">
+    Distances are approximate, measured from Wake Forest to each station's city of license. Power is the station's listed transmitter power. Station links go to Wikipedia.
+  </p>
+</ProjectLayout>
+
+<style>
+  .dx-stats {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+
+  @media (min-width: 640px) {
+    .dx-stats {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  .dx-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 1rem;
+    border-radius: 0.375rem;
+    background: var(--color-bg-alt);
+  }
+
+  :global(.dark) .dx-stat {
+    background: #1f2937;
+  }
+
+  .dx-stat-value {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--color-text-dark);
+    font-variant-numeric: tabular-nums;
+  }
+
+  :global(.dark) .dx-stat-value {
+    color: #f0f0f0;
+  }
+
+  .dx-stat-label {
+    font-size: 0.875rem;
+    line-height: 1.3;
+    color: var(--color-text-medium);
+  }
+
+  :global(.dark) .dx-stat-label {
+    color: #a0a0a0;
+  }
+
+  .dx-log {
+    list-style: none;
+    margin: 0 0 1.5rem;
+    padding: 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: var(--color-text-dark);
+  }
+
+  :global(.dark) .dx-log {
+    color: #d0d0d0;
+  }
+
+  .dx-head {
+    display: none;
+  }
+
+  .dx-row {
+    display: grid;
+    grid-template-columns: 6.5rem minmax(0, 1fr);
+    gap: 0.25rem 1rem;
+    padding: 1rem 0;
+    border-top: 1px solid var(--color-border);
+  }
+
+  :global(.dark) .dx-row {
+    border-top-color: #374151;
+  }
+
+  /* On phones each station is a card: frequency beside the details */
+  .dx-freq {
+    grid-row: span 4;
+  }
+
+  .dx-date {
+    color: var(--color-text-medium);
+  }
+
+  @media (min-width: 768px) {
+    .dx-head,
+    .dx-row {
+      display: grid;
+      grid-template-columns: 5.5rem minmax(0, 1.6fr) minmax(0, 1.1fr) minmax(0, 1.2fr) 6.5rem;
+      gap: 1rem;
+    }
+
+    .dx-head {
+      padding-bottom: 0.5rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--color-text-medium);
+    }
+
+    .dx-freq {
+      grid-row: auto;
+    }
+  }
+
+  .dx-freq {
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+
+  .dx-badge {
+    display: inline-block;
+    margin-left: 0.35rem;
+    padding: 0 0.35rem;
+    border-radius: 0.25rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    vertical-align: middle;
+    color: var(--color-hero-text);
+    background: var(--color-hero-bg);
+  }
+
+  :global(.dark) .dx-badge {
+    background: #374151;
+  }
+
+  .dx-station,
+  .dx-location,
+  .dx-format {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+
+  .dx-call {
+    font-weight: 700;
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: text-decoration-color 0.2s;
+  }
+
+  .dx-call:hover {
+    text-decoration-color: var(--color-accent);
+  }
+
+  .dx-name {
+    font-weight: 600;
+  }
+
+  .dx-how,
+  .dx-sub {
+    font-size: 0.85rem;
+    color: var(--color-text-medium);
+  }
+
+  :global(.dark) .dx-how,
+  :global(.dark) .dx-sub,
+  :global(.dark) .dx-date,
+  :global(.dark) .dx-head {
+    color: #a0a0a0;
+  }
+
+  .dx-how {
+    margin-top: 0.15rem;
+    font-style: italic;
+  }
+
+  .dx-footnote {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--color-text-medium);
+  }
+
+  :global(.dark) .dx-footnote {
+    color: #a0a0a0;
+  }
+</style>
