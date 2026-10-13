@@ -58,7 +58,7 @@ const formatDate = (iso: string) =>
           {s.band === 'SW' && <span class="dx-badge">SW</span>}
         </span>
         <span class="dx-station">
-          <a href={s.wikipedia} class="dx-call">{s.call_sign}</a>
+          <a href={s.wikipedia} class="dx-call" target="_blank" rel="noopener noreferrer">{s.call_sign}</a>
           <span class="dx-name">{s.name}</span>
           <span class="dx-how">{s.identified_by}</span>
         </span>
