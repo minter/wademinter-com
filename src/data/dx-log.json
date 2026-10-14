@@ -13,6 +13,19 @@
     "identified_by": "Station ID; crystal-clear local signal"
   },
   {
+    "frequency_khz": 620,
+    "band": "AM",
+    "call_sign": "WDNC",
+    "name": "The Buzz",
+    "city": "Durham, NC",
+    "format": "Sports",
+    "power": "1.5 kW day / 41 W night",
+    "first_heard": "2026-10-14",
+    "miles": 22,
+    "wikipedia": "https://en.wikipedia.org/wiki/WDNC",
+    "identified_by": "Matched to the live stream; NC Courage ad"
+  },
+  {
     "frequency_khz": 640,
     "band": "AM",
     "call_sign": "WXSM",
