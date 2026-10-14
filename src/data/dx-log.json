@@ -533,6 +533,19 @@
     "identified_by": "Call letters and Durham ID"
   },
   {
+    "frequency_khz": 1440,
+    "band": "AM",
+    "call_sign": "WKLV",
+    "name": "K92.7",
+    "city": "Blackstone, VA",
+    "format": "Oldies / classic hits",
+    "power": "5 kW day / 72 W night",
+    "first_heard": "2026-10-14",
+    "miles": 81,
+    "wikipedia": "https://en.wikipedia.org/wiki/WKLV_(AM)",
+    "identified_by": "Call letters and “92.7” ID"
+  },
+  {
     "frequency_khz": 1500,
     "band": "AM",
     "call_sign": "WFED",
