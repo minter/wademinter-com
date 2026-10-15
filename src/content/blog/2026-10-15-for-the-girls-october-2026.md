@@ -70,7 +70,7 @@ This is the October 2026 playlist for the girls.
     <span class="playlist-song-number">8.</span>
     <img class="playlist-song-artwork" src="https://is1-ssl.mzstatic.com/image/thumb/Music/c7/f1/ca/mzi.eqrikxph.jpg/160x160bb.jpg" alt="Album cover for O Brother, Where Art Thou?" width="72" height="72">
     <div class="playlist-song-copy">
-      <strong>&quot;Big Rock Candy Mountain&quot; - Harry McClintock (O Brother, Where Art Thou?, 2000)</strong>
+      <strong>&quot;Big Rock Candy Mountain&quot; - Harry McClintock (O Brother, Where Art Thou?, 1928strong>
       <p>A hobo's vision of paradise, complete with cigarette trees and lemonade springs, first recorded in 1928.</p>
     </div>
   </article>
