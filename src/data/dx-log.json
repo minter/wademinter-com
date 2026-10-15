@@ -13,6 +13,19 @@
     "identified_by": "Station ID; crystal-clear local signal"
   },
   {
+    "frequency_khz": 590,
+    "band": "AM",
+    "call_sign": "CJCL",
+    "name": "Sportsnet 590 The Fan",
+    "city": "Toronto, ON",
+    "format": "Sports",
+    "power": "50 kW",
+    "first_heard": "2026-10-14",
+    "miles": 532,
+    "wikipedia": "https://en.wikipedia.org/wiki/CJCL",
+    "identified_by": "Matched to the live stream; Toronto ads"
+  },
+  {
     "frequency_khz": 620,
     "band": "AM",
     "call_sign": "WDNC",
@@ -323,6 +336,19 @@
     "miles": 218,
     "wikipedia": "https://en.wikipedia.org/wiki/WTEM",
     "identified_by": "Matched to the stream during Bills–Rams"
+  },
+  {
+    "frequency_khz": 1000,
+    "band": "AM",
+    "call_sign": "WMVP",
+    "name": "ESPN 1000",
+    "city": "Chicago, IL",
+    "format": "Sports",
+    "power": "50 kW day / 37 kW night",
+    "first_heard": "2026-10-14",
+    "miles": 637,
+    "wikipedia": "https://en.wikipedia.org/wiki/WMVP",
+    "identified_by": "Matched to the live stream"
   },
   {
     "frequency_khz": 1020,
