@@ -98,6 +98,69 @@ const formatDate = (iso: string) =>
     background: var(--color-accent);
   }
 
+  /* "By the numbers" table and credit, rendered from radio.md */
+  :global(.prose table) {
+    width: 100%;
+    margin: 1.5rem 0;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: var(--color-text-dark);
+  }
+
+  :global(.dark .prose table) {
+    color: #d0d0d0;
+  }
+
+  :global(.prose th) {
+    padding: 0 0.75rem 0.5rem 0;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-align: left;
+    text-transform: uppercase;
+    color: var(--color-text-medium);
+  }
+
+  :global(.prose td) {
+    padding: 0.6rem 0.75rem 0.6rem 0;
+    border-top: 1px solid var(--color-border);
+    vertical-align: top;
+  }
+
+  :global(.dark .prose td) {
+    border-top-color: #374151;
+  }
+
+  :global(.prose th:nth-child(n + 3)),
+  :global(.prose td:nth-child(n + 3)) {
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  /* The tube count is in the list above; drop it so the table fits a phone */
+  @media (max-width: 639px) {
+    :global(.prose th:nth-child(3)),
+    :global(.prose td:nth-child(3)) {
+      display: none;
+    }
+
+    :global(.prose th),
+    :global(.prose td) {
+      padding-right: 0.5rem;
+    }
+  }
+
+  :global(.prose .numbers-credit) {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--color-text-medium);
+  }
+
+  :global(.dark .prose .numbers-credit) {
+    color: #a0a0a0;
+  }
+
   .dx-stats {
     scroll-margin-top: 1.5rem;
     display: grid;
