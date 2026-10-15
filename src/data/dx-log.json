@@ -403,6 +403,19 @@
     "identified_by": "“WBT 107.9” announcement over a jazz loop"
   },
   {
+    "frequency_khz": 1120,
+    "band": "AM",
+    "call_sign": "KMOX",
+    "name": "NewsRadio 1120",
+    "city": "St. Louis, MO",
+    "format": "News/talk",
+    "power": "50 kW",
+    "first_heard": "2026-10-14",
+    "miles": 668,
+    "wikipedia": "https://en.wikipedia.org/wiki/KMOX",
+    "identified_by": "Station ID"
+  },
+  {
     "frequency_khz": 1130,
     "band": "AM",
     "call_sign": "WBBR",
@@ -414,6 +427,19 @@
     "miles": 408,
     "wikipedia": "https://en.wikipedia.org/wiki/WBBR",
     "identified_by": "“Bloomberg 1130” ID"
+  },
+  {
+    "frequency_khz": 1140,
+    "band": "AM",
+    "call_sign": "WRVA",
+    "name": "Newsradio 1140",
+    "city": "Richmond, VA",
+    "format": "News/talk",
+    "power": "50 kW",
+    "first_heard": "2026-10-14",
+    "miles": 123,
+    "wikipedia": "https://en.wikipedia.org/wiki/WRVA_(AM)",
+    "identified_by": "Matched to the live stream during Sean Hannity"
   },
   {
     "frequency_khz": 1170,
@@ -583,6 +609,19 @@
     "miles": 393,
     "wikipedia": "https://en.wikipedia.org/wiki/WCKY_(AM)",
     "identified_by": "ESPN Radio at 1530"
+  },
+  {
+    "frequency_khz": 1540,
+    "band": "AM",
+    "call_sign": "KXEL",
+    "name": "News/Talk 1540",
+    "city": "Waterloo, IA",
+    "format": "News/talk",
+    "power": "50 kW",
+    "first_heard": "2026-10-14",
+    "miles": 864,
+    "wikipedia": "https://en.wikipedia.org/wiki/KXEL",
+    "identified_by": "Station ID; Mark Levin matched to the live stream"
   },
   {
     "frequency_khz": 1560,
