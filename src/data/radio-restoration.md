@@ -201,6 +201,11 @@ My first attempt went wrong because I trusted my old signal generator at the top
 </figure>
 </div>
 
+<figure>
+<img src="/images/radio/chassis-after.jpg" alt="The top of the restored chassis on a towel, with its tubes and shields in place" loading="lazy" />
+<figcaption>The chassis out of the cabinet for alignment in late September.</figcaption>
+</figure>
+
 <details>
 <summary>Technical details</summary>
 
