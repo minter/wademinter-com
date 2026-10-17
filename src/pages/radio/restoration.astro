@@ -1,0 +1,135 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro'
+import { Content } from '../../data/radio-restoration.md'
+import parts from '../../data/philco-parts.json'
+
+const groups = [...new Set(parts.map(p => p.group))]
+const replaced = parts.filter(p => p.status === 'Replaced' || p.status === 'One replaced').length
+---
+
+<PageLayout
+  title="Restoring the Philco"
+  subtitle="Bringing a 1946 Philco 46-1226 back to life, one part at a time"
+  description="A detailed account of restoring a Philco 46-1226 Code 125 console radio: capacitors, power supply, troubleshooting, alignment, and the full parts list."
+  featured_image="/images/radio/dial-lit.jpg"
+>
+  <p class="back-link"><a href="/radio">← Back to the Philco 46-1226 page</a></p>
+
+  <Content />
+
+  <h2 id="parts-list">Full parts list</h2>
+
+  <p>
+    Every part touched, tested or deliberately kept, grouped by section of the radio. Reference numbers match Philco's service manual.
+  </p>
+
+  <details>
+    <summary>Show all parts ({parts.length} entries, {replaced} replaced)</summary>
+
+    {groups.map(group => (
+      <div class="parts-group">
+        <h3>{group}</h3>
+        <ul class="parts-list">
+          {parts.filter(p => p.group === group).map(p => (
+            <li class="parts-item">
+              <span class="parts-ref">{p.ref}</span>
+              <span class="parts-part">{p.part}</span>
+              <span class="parts-detail">
+                {p.original !== '—' && <span>Original: {p.original}</span>}
+                {p.replacement !== '—' && <span>Now: {p.replacement}</span>}
+              </span>
+              <span class={`parts-status status-${p.status.toLowerCase().replace(/\s+/g, '-')}`}>{p.status}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </details>
+
+  <p class="back-link"><a href="/radio#station-log">See what it hears: the station log →</a></p>
+</PageLayout>
+
+<style>
+  .back-link {
+    font-size: 1rem;
+  }
+
+  .parts-group h3 {
+    margin-top: 1.25rem;
+    font-size: 1.1rem;
+  }
+
+  .parts-list {
+    list-style: none;
+    margin: 0 0 1rem;
+    padding: 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .parts-item {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.15rem 1rem;
+    padding: 0.6rem 0;
+    border-top: 1px solid var(--color-border);
+  }
+
+  :global(.dark) .parts-item {
+    border-top-color: #374151;
+  }
+
+  .parts-ref {
+    font-weight: 700;
+  }
+
+  .parts-part,
+  .parts-detail {
+    grid-column: 1;
+  }
+
+  .parts-detail {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.85rem;
+    color: var(--color-text-medium);
+  }
+
+  :global(.dark) .parts-detail {
+    color: #a0a0a0;
+  }
+
+  .parts-status {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: start;
+    padding: 0.05rem 0.5rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    white-space: nowrap;
+    color: var(--color-text-medium);
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+  }
+
+  :global(.dark) .parts-status {
+    color: #a0a0a0;
+    background: #111827;
+    border-color: #374151;
+  }
+
+  .status-replaced,
+  .status-one-replaced {
+    color: var(--color-hero-text);
+    background: var(--color-hero-bg);
+    border-color: var(--color-hero-bg);
+  }
+
+  :global(.dark) .status-replaced,
+  :global(.dark) .status-one-replaced {
+    color: #ffffff;
+    background: #2563eb;
+    border-color: #2563eb;
+  }
+</style>

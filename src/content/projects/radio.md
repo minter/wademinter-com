@@ -13,25 +13,28 @@ This is a Philco 46-1226, a walnut console radio and record changer from just af
 
 Inside, though, it was remarkably intact: clean, complete, and apparently never modified. That made the goal simple to say and fussy to do. Get it working again, safely, while changing as little of the original as possible.
 
-## The restoration
+## Bringing it back
 
-I'd warmed up on a Philco 40-130 first, so I went in with a plan: replace the parts that are known to fail with age, test everything else, and leave the original wiring layout alone.
+When I opened the back in July 2026, I found the chassis under decades of dust and cobwebs, with the original tube chart still pasted inside the cabinet. As far as I could tell, nobody had ever worked on it, which meant nearly every part was eighty years old.
 
-**Capacitors.** Eighty-year-old paper and electrolytic capacitors are the usual suspects in an old radio, and they can take other parts with them when they fail. Over a few late-August sessions I replaced fifteen paper capacitors with modern film equivalents, keeping each one on its original connection points. Two more are buried under the tuning assembly, and I left them there. Getting to them risks more than it fixes.
+I'd warmed up on a smaller Philco first, so I went in with a plan: replace the parts that are known to fail with age, test everything else, and keep it as original as I could. Over the next two months I replaced sixteen paper capacitors, rebuilt the power supply, put in a new cord and safety capacitors, and brought it up slowly on a current-limited supply.
 
-**Power supply.** One of the big power resistors had failed open and another had drifted well out of spec. I replaced both, and rebuilt the filter capacitors on new terminal strips while leaving the original cans mounted so the chassis still looks right.
+<div class="figure-row">
+<figure>
+<img src="/images/radio/dial-before.jpg" alt="The Philco dial before restoration, unlit" loading="lazy" />
+<figcaption>July 2026: dark for decades.</figcaption>
+</figure>
+<figure>
+<img src="/images/radio/dial-lit.jpg" alt="The Philco dial lit with new lamps" loading="lazy" />
+<figcaption>September 2026: lit and playing.</figcaption>
+</figure>
+</div>
 
-**Power and safety.** A flaky power switch came back with contact cleaner. Then came a new cord and modern safety-rated line capacitors. The first power-ups were done slowly, through a dim-bulb limiter and then a Variac, with a meter watching the high-voltage supply.
+On the morning of Saturday, September 19, after tracking a stubborn static to one bad output tube, the radio played for the first time in decades. Two days later the dial lamps were glowing again. On September 26 I aligned it so the stations land where the glass says, and in October one last crackle turned out to be a tired converter tube.
 
-**The static.** Once it was powered, the radio had an intermittent static that wouldn't go away. Swapping tubes between sockets showed that the static followed one of the original 6K6 output tubes. A replacement RCA 6K6GT arrived on September 18.
+The record changer is a project for another day.
 
-**First sound.** On Saturday morning, September 19, the radio played a broadcast station for the first time in decades. I tested the audio with a small low-power AM transmitter feeding it music, and it sounded great. The two dial lamps were dead, too; new #51 bulbs had the glass lit again by September 21.
-
-**Alignment.** The dial was reading badly low, as much as 70 kHz off in places. On September 26 I aligned the receiver, using WHPY on 1590 as the reference for the top of the dial. Afterward, stations landed where the glass said they should, within about 10 kHz.
-
-**One last crackle.** A popping noise that was hard to place turned out to be the original 7AF7 converter tube. Pulling it silenced the noise, and tapping it with a chopstick made it pop on every tap. A new-old-stock replacement went in on October 8, and the radio has been quiet since.
-
-The record changer is a separate project for another day. The shortwave band works but has only been spot-checked against a couple of stations, not fully aligned.
+<p class="read-more"><a href="/radio/restoration">Read the full restoration write-up, with photos, measurements and the complete parts list →</a></p>
 
 ## By the numbers
 
