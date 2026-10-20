@@ -31,3 +31,6 @@ functions/packages/**/__deployer__.zip
 
 # Claude Code
 .claude/
+
+# Claude Code Superpowers plugin scratch files
+.superpowers/
