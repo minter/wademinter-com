@@ -13,6 +13,32 @@
     "identified_by": "Station ID; crystal-clear local signal"
   },
   {
+    "frequency_khz": 550,
+    "band": "AM",
+    "call_sign": "WSVA",
+    "name": "News/Talk WSVA",
+    "city": "Harrisonburg, VA",
+    "format": "News/talk",
+    "power": "5 kW day / 1 kW night",
+    "first_heard": "2026-10-19",
+    "miles": 172,
+    "wikipedia": "https://en.wikipedia.org/wiki/WSVA",
+    "identified_by": "“550 WSVA” ID and JMU mentions"
+  },
+  {
+    "frequency_khz": 570,
+    "band": "AM",
+    "call_sign": "WKBN",
+    "name": "NewsRadio 570",
+    "city": "Youngstown, OH",
+    "format": "News/talk & sports",
+    "power": "5 kW",
+    "first_heard": "2026-10-19",
+    "miles": 372,
+    "wikipedia": "https://en.wikipedia.org/wiki/WKBN_(AM)",
+    "identified_by": "“WKBN 570” ID during Cleveland baseball"
+  },
+  {
     "frequency_khz": 590,
     "band": "AM",
     "call_sign": "CJCL",
@@ -286,6 +312,19 @@
     "identified_by": "Matched to the live stream"
   },
   {
+    "frequency_khz": 870,
+    "band": "AM",
+    "call_sign": "WWL",
+    "name": "WWL Radio",
+    "city": "New Orleans, LA",
+    "format": "News/talk & sports",
+    "power": "50 kW",
+    "first_heard": "2026-10-19",
+    "miles": 788,
+    "wikipedia": "https://en.wikipedia.org/wiki/WWL_(AM)",
+    "identified_by": "Monday Night Football matched to the live stream (a shared network feed)"
+  },
+  {
     "frequency_khz": 880,
     "band": "AM",
     "call_sign": "WHSQ",
@@ -310,6 +349,19 @@
     "miles": 637,
     "wikipedia": "https://en.wikipedia.org/wiki/WLS_(AM)",
     "identified_by": "Station ID"
+  },
+  {
+    "frequency_khz": 920,
+    "band": "AM",
+    "call_sign": "CKNX",
+    "name": "AM 920",
+    "city": "Wingham, ON",
+    "format": "Talk & sports",
+    "power": "10 kW day / 1 kW night",
+    "first_heard": "2026-10-19",
+    "miles": 566,
+    "wikipedia": "https://en.wikipedia.org/wiki/CKNX_(AM)",
+    "identified_by": "Maple Leafs hockey matched to the live stream"
   },
   {
     "frequency_khz": 930,
@@ -375,6 +427,19 @@
     "miles": 594,
     "wikipedia": "https://en.wikipedia.org/wiki/WBZ_(AM)",
     "identified_by": "Station ID"
+  },
+  {
+    "frequency_khz": 1040,
+    "band": "AM",
+    "call_sign": "WHO",
+    "name": "NewsRadio 1040 WHO",
+    "city": "Des Moines, IA",
+    "format": "News/talk",
+    "power": "50 kW",
+    "first_heard": "2026-10-19",
+    "miles": 900,
+    "wikipedia": "https://en.wikipedia.org/wiki/WHO_(AM)",
+    "identified_by": "“1040 WHO”"
   },
   {
     "frequency_khz": 1060,
