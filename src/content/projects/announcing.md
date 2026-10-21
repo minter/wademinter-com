@@ -35,6 +35,7 @@ If you were to pick one person from Kenbridge, Virginia, who would make SportsCe
 
 ### In The Press
 
+* [From the Stands to the Stanley Cup](https://magazine.wm.edu/issue/2026-fall/from-the-stands-to-the-stanley-cup.php) — William & Mary Magazine
 * [PAA Summit on WGHP's FOX8](https://vimeo.com/1223202987) — WGHP FOX8
 * [Minter serves as voice of the Hurricanes](https://kenbridgevictoriadispatch.com/2026/07/09/minter-serves-as-voice-of-the-hurricanes/) — Kenbridge-Victoria Dispatch
 * [The voice of the Canes pulls back the curtain. Why he's never missed a home game](https://www.newsobserver.com/sports/nhl/carolina-hurricanes/article315999652.html?giftCode=8583358db0d179e55b1b9c15621e75a8b26a052ab23beb5b4d7afc56edfb8228) — Raleigh News & Observer
