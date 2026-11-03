@@ -299,6 +299,19 @@
     "identified_by": "Station ID"
   },
   {
+    "frequency_khz": 850,
+    "band": "AM",
+    "call_sign": "WKNR",
+    "name": "850 ESPN Cleveland",
+    "city": "Cleveland, OH",
+    "format": "Sports",
+    "power": "50 kW day / 4.7 kW night",
+    "first_heard": "2026-11-02",
+    "miles": 418,
+    "wikipedia": "https://en.wikipedia.org/wiki/WKNR",
+    "identified_by": "Station ID during Ohio State–BYU basketball"
+  },
+  {
     "frequency_khz": 860,
     "band": "AM",
     "call_sign": "CJBC",
