@@ -611,6 +611,32 @@
     "identified_by": "“Live with Pastor Al”"
   },
   {
+    "frequency_khz": 1270,
+    "band": "AM",
+    "call_sign": "WDLR",
+    "name": "My 96.7",
+    "city": "Marysville, OH",
+    "format": "Classic hits",
+    "power": "500 W",
+    "first_heard": "2026-11-02",
+    "miles": 395,
+    "wikipedia": "https://en.wikipedia.org/wiki/WDLR",
+    "identified_by": "WDLR call letters"
+  },
+  {
+    "frequency_khz": 1280,
+    "band": "AM",
+    "call_sign": "WHVR",
+    "name": "Happy 95-3 and 1280",
+    "city": "Hanover, PA",
+    "format": "Adult contemporary",
+    "power": "5 kW day / 500 W night",
+    "first_heard": "2026-11-02",
+    "miles": 277,
+    "wikipedia": "https://en.wikipedia.org/wiki/WHVR",
+    "identified_by": "Steve Perry’s “Oh Sherrie” matched to the live stream"
+  },
+  {
     "frequency_khz": 1320,
     "band": "AM",
     "call_sign": "WJAS",
