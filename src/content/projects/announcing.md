@@ -51,6 +51,7 @@ If you were to pick one person from Kenbridge, Virginia, who would make SportsCe
 
 ### Podcast and Media Appearances
 
+* [Tribe Unscripted](https://tribeathletics.com/podcasts/tribe-unscripted-wade-minter-interview-ep-24/25) — William & Mary Athletics Podcast
 * [Iced Tea with Meghan Lamontagne](https://youtu.be/VXmX1zCinVg) — Podcast
 * [Locked On Hurricanes](https://www.youtube.com/watch?v=1GXANg78ZL0) — Podcast
 * [The Caniac Report](https://bleav.com/shows/the-caniac-report/episodes/episode-146-catching-up-with-hurricanes-pa-announcer-wade-minter/) — Podcast

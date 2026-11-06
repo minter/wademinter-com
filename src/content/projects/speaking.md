@@ -80,6 +80,7 @@ I'm an occasional guest on a couple of radio programs:
 
 ## Full Speaking History
 
+* [Tribe Unscripted](https://tribeathletics.com/podcasts/tribe-unscripted-wade-minter-interview-ep-24/25) — William & Mary Athletics Podcast
 * [Iced Tea with Meghan Lamontagne](https://youtu.be/VXmX1zCinVg) — Podcast
 * [Locked On Hurricanes](https://www.youtube.com/watch?v=1GXANg78ZL0) — Podcast
 * Emcee — Keep North Carolina Beautiful Golf Tournament and Fundraiser (Greensboro, NC)
