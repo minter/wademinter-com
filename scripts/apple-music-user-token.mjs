@@ -31,7 +31,7 @@ function page(token) {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Apple Music User Token</title>
-  <script src="https://js-cdn.music.apple.com/musickit/v1/musickit.js"></script>
+  <script src="https://js-cdn.music.apple.com/musickit/v3/musickit.js"></script>
   <style>
     body {
       color: #111;
@@ -75,7 +75,7 @@ function page(token) {
 
     document.addEventListener('musickitloaded', async () => {
       try {
-        const music = MusicKit.configure({
+        const music = await MusicKit.configure({
           developerToken,
           app: {
             name: 'Wade Playlist Tools',
@@ -86,12 +86,27 @@ function page(token) {
 
         document.querySelector('#authorize').addEventListener('click', async () => {
           try {
+            // MusicKit caches the user token in localStorage and authorize() will
+            // happily hand back a stale/expired one. Clear it to force a fresh sign-in.
+            try { await music.unauthorize(); } catch (_) {}
+            result.textContent = 'Authorizing...';
+
             const authorizeResult = await music.authorize();
             const userToken = authorizeResult || music.musicUserToken;
             if (!userToken) {
               throw new Error('MusicKit authorize completed, but no music user token was returned.');
             }
-            result.textContent = 'export APPLE_MUSIC_USER_TOKEN="' + userToken + '"';
+
+            const check = await fetch('https://api.music.apple.com/v1/me/library/playlists?limit=1', {
+              headers: {
+                'Authorization': 'Bearer ' + developerToken,
+                'Music-User-Token': userToken
+              }
+            });
+            const status = check.ok
+              ? '# Verified: library request succeeded.'
+              : '# WARNING: library request failed (' + check.status + '). This token will not work.';
+            result.textContent = status + '\\nexport APPLE_MUSIC_USER_TOKEN="' + userToken + '"';
           } catch (error) {
             result.textContent = 'Authorization failed:\\n' + formatError(error);
           }

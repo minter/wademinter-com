@@ -63,6 +63,16 @@ export async function appleMusicFetch(path, options = {}) {
 
   if (!response.ok) {
     const body = await response.text();
+
+    if ((response.status === 401 || response.status === 403) && url.pathname.startsWith('/v1/me/')) {
+      throw new Error([
+        `Apple Music rejected APPLE_MUSIC_USER_TOKEN (${response.status}). It has probably expired (they last ~6 months).`,
+        'To fix: run `npm run apple-music:user-token`, open the URL in a private/incognito window,',
+        'authorize, confirm the page says "Verified", then update APPLE_MUSIC_USER_TOKEN in ~/.zshrc and open a new shell.',
+        `Apple response: ${body}`,
+      ].join('\n'));
+    }
+
     throw new Error(`Apple Music request failed (${response.status}): ${body}`);
   }
 

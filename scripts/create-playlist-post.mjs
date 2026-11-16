@@ -510,7 +510,12 @@ function playlistImagePath(playlistInfo, sourcePath) {
 }
 
 async function findMusicCover(playlistInfo) {
-  if (coverImage || noMusicCover || !process.env.APPLE_MUSIC_USER_TOKEN) {
+  if (coverImage || noMusicCover) {
+    return undefined;
+  }
+
+  if (!process.env.APPLE_MUSIC_USER_TOKEN) {
+    console.warn('\n⚠️  APPLE_MUSIC_USER_TOKEN is not set, so the playlist cover art will be skipped.\nRun `npm run apple-music:user-token` to get one, or pass --cover-image <file>.\n');
     return undefined;
   }
 
@@ -547,7 +552,7 @@ async function findMusicCover(playlistInfo) {
       bytes,
     };
   } catch (error) {
-    console.warn(`Could not fetch Apple Music playlist artwork: ${error.message}`);
+    console.warn(`\n⚠️  Could not fetch Apple Music playlist cover art. The post will have an empty featured_image.\n${error.message}\n`);
     return undefined;
   }
 }
