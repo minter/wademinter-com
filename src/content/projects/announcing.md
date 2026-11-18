@@ -51,6 +51,7 @@ If you were to pick one person from Kenbridge, Virginia, who would make SportsCe
 
 ### Podcast and Media Appearances
 
+* [He Said, Son Said](https://www.youtube.com/watch?v=hoPbY2F-CCc) — Podcast, Episode 32
 * [Tribe Unscripted](https://tribeathletics.com/podcasts/tribe-unscripted-wade-minter-interview-ep-24/25) — William & Mary Athletics Podcast
 * [Iced Tea with Meghan Lamontagne](https://youtu.be/VXmX1zCinVg) — Podcast
 * [Locked On Hurricanes](https://www.youtube.com/watch?v=1GXANg78ZL0) — Podcast
